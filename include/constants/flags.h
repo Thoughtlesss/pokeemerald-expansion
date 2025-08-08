@@ -98,7 +98,7 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
+#define FLAG_EXP_SHARE_TOGGLE                0x54  // EXP Share Flag
 #define FLAG_UNUSED_0x055                    0x55  // Unused Flag
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
@@ -776,7 +776,7 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
+#define FLAG_HIDE_EVER_GRANDE_CITY_RED                              0x2D9
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
@@ -1083,8 +1083,8 @@
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
+#define FLAG_ITEM_METEOR_FALLS_AERODACTYLITE                        0x409
+#define FLAG_ITEM_ROUTE_127_GYARADOSITE                             0x40A
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
@@ -1122,14 +1122,14 @@
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0x42D
 #define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
-#define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
+#define FLAG_ITEM_AQUA_HIDEOUT_B2F_SHARPEDONITE                     0x430
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_SKILL_SWAP                    0x432
 #define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0x433
 #define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0x434
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_6_LUXURY_BALL    0x435
 #define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_2_SCANNER        0x436
-#define FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY                        0x437
+#define FLAG_ITEM_SCORCHED_SLAB_CHARIZARDITE_X                      0x437
 #define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW                0x438
 #define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
 #define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
@@ -1175,10 +1175,10 @@
 #define FLAG_ITEM_NEW_MAUVILLE_FULL_HEAL                            0x462
 #define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
+#define FLAG_ITEM_METEOR_FALLS_SALAMENCITE                          0x465
+#define FLAG_ITEM_NEW_MAUVILLE_AMPHAROSITE                          0x466
+#define FLAG_ITEM_SCORCHED_SLAB_CHARIZARDITE_Y                      0x467
+#define FLAG_ITEM_MT_PYRE_BANETTITE                                 0x468
 #define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
@@ -1186,16 +1186,16 @@
 #define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
 #define FLAG_ITEM_ROUTE_119_NUGGET                                  0x46E
 #define FLAG_ITEM_ROUTE_104_POTION                                  0x46F
-#define FLAG_UNUSED_0x470                                           0x470 // Unused Flag
+#define FLAG_ITEM_ROUTE_120_ABSOLITE                                0x470
 #define FLAG_ITEM_ROUTE_103_PP_UP                                   0x471
-#define FLAG_UNUSED_0x472                                           0x472 // Unused Flag
+#define FLAG_ITEM_NEW_MAUVILLE_MANECTITE                            0x472
 #define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0x473
 #define FLAG_ITEM_ROUTE_109_POTION                                  0x474
 #define FLAG_ITEM_ROUTE_110_ELIXIR                                  0x475
 #define FLAG_ITEM_ROUTE_111_ELIXIR                                  0x476
 #define FLAG_ITEM_ROUTE_113_HYPER_POTION                            0x477
 #define FLAG_ITEM_ROUTE_115_HEAL_POWDER                             0x478
-#define FLAG_UNUSED_0x479                                           0x479 // Unused Flag
+#define FLAG_ITEM_MT_PYRE_GENGARITE                                 0x479
 #define FLAG_ITEM_ROUTE_116_POTION                                  0x47A
 #define FLAG_ITEM_ROUTE_119_ELIXIR_2                                0x47B
 #define FLAG_ITEM_ROUTE_120_REVIVE                                  0x47C
@@ -1222,58 +1222,58 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
-#define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
-#define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
-#define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
-#define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
-#define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
-#define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
-#define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
-#define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
-#define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
-#define FLAG_UNUSED_0x4C5                                           0x4C5 // Unused Flag
-#define FLAG_UNUSED_0x4C6                                           0x4C6 // Unused Flag
+#define FLAG_ITEM_MT_PYRE_SABLENITE                                 0x493
+#define FLAG_ITEM_LATIASITE                                         0x494
+#define FLAG_ITEM_LATIOSITE                                         0x495
+#define FLAG_ITEM_SLOWBRONITE                                       0x496
+#define FLAG_ITEM_HERACRONITE                                       0x497
+#define FLAG_ITEM_ALTARIANITE                                       0x498
+#define FLAG_ITEM_MAWILITE                                          0x499
+#define FLAG_ITEM_PINSIRITE                                         0x49A
+#define FLAG_ITEM_MALICIOUS_ARMOR                                   0x49B
+#define FLAG_ITEM_AUSPICIOUS_ARMOR                                  0x49C
+#define FLAG_HIDDEN_ITEM_BLACK_AUGURITE                             0x49D
+#define FLAG_HIDDEN_ITEM_METAL_COAT                                 0x49E
+#define FLAG_ITEM_ELECTERIZER                                       0x49F
+#define FLAG_HIDDEN_ITEM_HEAT_ROCK                                  0x4A0
+#define FLAG_HIDDEN_ITEM_SMOOTH_ROCK                                0x4A1
+#define FLAG_ITEM_GLALITITE                                         0x4A2
+#define FLAG_HIDDEN_ITEM_ICY_ROCK                                   0x4A3
+#define FLAG_HIDDEN_ITEM_DAMP_ROCK                                  0x4A4
+#define FLAG_ITEM_FROSTBITE_CAVE_ICE_STONE                          0x4A5
+#define FLAG_ITEM_FROSTBITE_CAVE_ULTRA_BALL                         0x4A6
+#define FLAG_ITEM_FROSTBITE_CAVE_ICE_STONE2                         0x4A7
+#define FLAG_ITEM_RAZOR_CLAW                                        0x4A8
+#define FLAG_DEWFORD_BEACH_STAR_PIECE                               0x4A9
+#define FLAG_HIDDEN_ITEM_DESERT_COMET_SHARD                         0x4AA
+#define FLAG_HIDDEN_ITEM_DESERT_HARD_STONE                          0x4AB
+#define FLAG_HIDDEN_ITEM_FIERY_PASS_FIRE_STONE                      0x4AC
+#define FLAG_ITEM_MEDICHAMITE                                       0x4AD
+#define FLAG_ITEM_PEAT_BLOCK                                        0x4AE
+#define FLAG_ITEM_ALAKAZITE                                         0x4AF
+#define FLAG_ITEM_LUCARIONITE                                       0x4B0
+#define FLAG_ITEM_DOME_FOSSIL                                       0x4B1
+#define FLAG_ITEM_OLD_AMBER                                         0x4B2
+#define FLAG_ITEM_SKULL_FOSSIL                                      0x4B3
+#define FLAG_ITEM_ARMOR_FOSSIL                                      0x4B4
+#define FLAG_ITEM_COVER_FOSSIL                                      0x4B5
+#define FLAG_ITEM_PLUME_FOSSIL                                      0x4B6
+#define FLAG_ITEM_JAW_FOSSIL                                        0x4B7
+#define FLAG_ITEM_RAZOR_FANG                                        0x4B8
+#define FLAG_ITEM_CAMERUPTITE                                       0x4B9
+#define FLAG_ITEM_GARCHOMPITE                                       0x4BA
+#define FLAG_ITEM_STEELIXITE                                        0x4BB
+#define FLAG_ITEM_TYRANITARITE                                      0x4BC
+#define FLAG_ROCKRUFF_CAUGHT                                        0x4BD
+#define FLAG_HIDE_ROCKRUFF                                          0x4BE
+#define FLAG_ITEM_METAL_COAT2                                       0x4BF
+#define FLAG_ITEM_MODEST_MINT                                       0x4C0
+#define FLAG_ITEM_POISON_BARB                                       0x4C1
+#define FLAG_ITEM_COASTALCAVE_DAWN_STONE                            0x4C2
+#define FLAG_ITEM_COASTALCAVE_DUSK_STONE                            0x4C3
+#define FLAG_ITEM_ADAMANT_MINT                                      0x4C4
+#define FLAG_ITEM_TIMID_MINT                                        0x4C5
+#define FLAG_ITEM_IMPISH_MINT                                       0x4C6
 #define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
 #define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
 #define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
@@ -1336,18 +1336,660 @@
 
 #define FLAG_UNUSED_0x4FF                                           0x4FF // Unused Flag
 
-// Trainer Flags
-// Trainer flags occupy 0x500 - 0x85F, the last 9 of which are unused
-// See constants/opponents.h. The values there + FLAG_TRAINER_FLAG_START are the flag IDs
+#define FLAG_UNUSED_0x500                                           0x500 // Unused Flag
+#define FLAG_UNUSED_0x501                                           0x501 // Unused Flag
+#define FLAG_UNUSED_0x502                                           0x502 // Unused Flag
+#define FLAG_UNUSED_0x503                                           0x503 // Unused Flag
+#define FLAG_UNUSED_0x504                                           0x504 // Unused Flag
+#define FLAG_UNUSED_0x505                                           0x505 // Unused Flag
+#define FLAG_UNUSED_0x506                                           0x506 // Unused Flag
+#define FLAG_UNUSED_0x507                                           0x507 // Unused Flag
+#define FLAG_UNUSED_0x508                                           0x508 // Unused Flag
+#define FLAG_UNUSED_0x509                                           0x509 // Unused Flag
+#define FLAG_UNUSED_0x50A                                           0x50A // Unused Flag
+#define FLAG_UNUSED_0x50B                                           0x50B // Unused Flag
+#define FLAG_UNUSED_0x50C                                           0x50C // Unused Flag
+#define FLAG_UNUSED_0x50D                                           0x50D // Unused Flag
+#define FLAG_UNUSED_0x50E                                           0x50E // Unused Flag
+#define FLAG_UNUSED_0x50F                                           0x50F // Unused Flag
+#define FLAG_UNUSED_0x510                                           0x510 // Unused Flag
+#define FLAG_UNUSED_0x511                                           0x511 // Unused Flag
+#define FLAG_UNUSED_0x512                                           0x512 // Unused Flag
+#define FLAG_UNUSED_0x513                                           0x513 // Unused Flag
+#define FLAG_UNUSED_0x514                                           0x514 // Unused Flag
+#define FLAG_UNUSED_0x515                                           0x515 // Unused Flag
+#define FLAG_UNUSED_0x516                                           0x516 // Unused Flag
+#define FLAG_UNUSED_0x517                                           0x517 // Unused Flag
+#define FLAG_UNUSED_0x518                                           0x518 // Unused Flag
+#define FLAG_UNUSED_0x519                                           0x519 // Unused Flag
+#define FLAG_UNUSED_0x51A                                           0x51A // Unused Flag
+#define FLAG_UNUSED_0x51B                                           0x51B // Unused Flag
+#define FLAG_UNUSED_0x51C                                           0x51C // Unused Flag
+#define FLAG_UNUSED_0x51D                                           0x51D // Unused Flag
+#define FLAG_UNUSED_0x51E                                           0x51E // Unused Flag
+#define FLAG_UNUSED_0x51F                                           0x51F // Unused Flag
+#define FLAG_UNUSED_0x520                                           0x520 // Unused Flag
+#define FLAG_UNUSED_0x521                                           0x521 // Unused Flag
+#define FLAG_UNUSED_0x522                                           0x522 // Unused Flag
+#define FLAG_UNUSED_0x523                                           0x523 // Unused Flag
+#define FLAG_UNUSED_0x524                                           0x524 // Unused Flag
+#define FLAG_UNUSED_0x525                                           0x525 // Unused Flag
+#define FLAG_UNUSED_0x526                                           0x526 // Unused Flag
+#define FLAG_UNUSED_0x527                                           0x527 // Unused Flag
+#define FLAG_UNUSED_0x528                                           0x528 // Unused Flag
+#define FLAG_UNUSED_0x529                                           0x529 // Unused Flag
+#define FLAG_UNUSED_0x52A                                           0x52A // Unused Flag
+#define FLAG_UNUSED_0x52B                                           0x52B // Unused Flag
+#define FLAG_UNUSED_0x52C                                           0x52C // Unused Flag
+#define FLAG_UNUSED_0x52D                                           0x52D // Unused Flag
+#define FLAG_UNUSED_0x52E                                           0x52E // Unused Flag
+#define FLAG_UNUSED_0x52F                                           0x52F // Unused Flag
+#define FLAG_UNUSED_0x530                                           0x530 // Unused Flag
+#define FLAG_UNUSED_0x531                                           0x531 // Unused Flag
+#define FLAG_UNUSED_0x532                                           0x532 // Unused Flag
+#define FLAG_UNUSED_0x533                                           0x533 // Unused Flag
+#define FLAG_UNUSED_0x534                                           0x534 // Unused Flag
+#define FLAG_UNUSED_0x535                                           0x535 // Unused Flag
+#define FLAG_UNUSED_0x536                                           0x536 // Unused Flag
+#define FLAG_UNUSED_0x537                                           0x537 // Unused Flag
+#define FLAG_UNUSED_0x538                                           0x538 // Unused Flag
+#define FLAG_UNUSED_0x539                                           0x539 // Unused Flag
+#define FLAG_UNUSED_0x53A                                           0x53A // Unused Flag
+#define FLAG_UNUSED_0x53B                                           0x53B // Unused Flag
+#define FLAG_UNUSED_0x53C                                           0x53C // Unused Flag
+#define FLAG_UNUSED_0x53D                                           0x53D // Unused Flag
+#define FLAG_UNUSED_0x53E                                           0x53E // Unused Flag
+#define FLAG_UNUSED_0x53F                                           0x53F // Unused Flag
+#define FLAG_UNUSED_0x540                                           0x540 // Unused Flag
+#define FLAG_UNUSED_0x541                                           0x541 // Unused Flag
+#define FLAG_UNUSED_0x542                                           0x542 // Unused Flag
+#define FLAG_UNUSED_0x543                                           0x543 // Unused Flag
+#define FLAG_UNUSED_0x544                                           0x544 // Unused Flag
+#define FLAG_UNUSED_0x545                                           0x545 // Unused Flag
+#define FLAG_UNUSED_0x546                                           0x546 // Unused Flag
+#define FLAG_UNUSED_0x547                                           0x547 // Unused Flag
+#define FLAG_UNUSED_0x548                                           0x548 // Unused Flag
+#define FLAG_UNUSED_0x549                                           0x549 // Unused Flag
+#define FLAG_UNUSED_0x54A                                           0x54A // Unused Flag
+#define FLAG_UNUSED_0x54B                                           0x54B // Unused Flag
+#define FLAG_UNUSED_0x54C                                           0x54C // Unused Flag
+#define FLAG_UNUSED_0x54D                                           0x54D // Unused Flag
+#define FLAG_UNUSED_0x54E                                           0x54E // Unused Flag
+#define FLAG_UNUSED_0x54F                                           0x54F // Unused Flag
+#define FLAG_UNUSED_0x540                                           0x540 // Unused Flag
+#define FLAG_UNUSED_0x541                                           0x541 // Unused Flag
+#define FLAG_UNUSED_0x542                                           0x542 // Unused Flag
+#define FLAG_UNUSED_0x543                                           0x543 // Unused Flag
+#define FLAG_UNUSED_0x544                                           0x544 // Unused Flag
+#define FLAG_UNUSED_0x545                                           0x545 // Unused Flag
+#define FLAG_UNUSED_0x546                                           0x546 // Unused Flag
+#define FLAG_UNUSED_0x547                                           0x547 // Unused Flag
+#define FLAG_UNUSED_0x548                                           0x548 // Unused Flag
+#define FLAG_UNUSED_0x549                                           0x549 // Unused Flag
+#define FLAG_UNUSED_0x54A                                           0x54A // Unused Flag
+#define FLAG_UNUSED_0x54B                                           0x54B // Unused Flag
+#define FLAG_UNUSED_0x54C                                           0x54C // Unused Flag
+#define FLAG_UNUSED_0x54D                                           0x54D // Unused Flag
+#define FLAG_UNUSED_0x54E                                           0x54E // Unused Flag
+#define FLAG_UNUSED_0x54F                                           0x54F // Unused Flag
+#define FLAG_UNUSED_0x550                                           0x550 // Unused Flag
+#define FLAG_UNUSED_0x551                                           0x551 // Unused Flag
+#define FLAG_UNUSED_0x552                                           0x552 // Unused Flag
+#define FLAG_UNUSED_0x553                                           0x553 // Unused Flag
+#define FLAG_UNUSED_0x554                                           0x554 // Unused Flag
+#define FLAG_UNUSED_0x555                                           0x555 // Unused Flag
+#define FLAG_UNUSED_0x556                                           0x556 // Unused Flag
+#define FLAG_UNUSED_0x557                                           0x557 // Unused Flag
+#define FLAG_UNUSED_0x558                                           0x558 // Unused Flag
+#define FLAG_UNUSED_0x559                                           0x559 // Unused Flag
+#define FLAG_UNUSED_0x55A                                           0x55A // Unused Flag
+#define FLAG_UNUSED_0x55B                                           0x55B // Unused Flag
+#define FLAG_UNUSED_0x55C                                           0x55C // Unused Flag
+#define FLAG_UNUSED_0x55D                                           0x55D // Unused Flag
+#define FLAG_UNUSED_0x55E                                           0x55E // Unused Flag
+#define FLAG_UNUSED_0x55F                                           0x55F // Unused Flag
+#define FLAG_UNUSED_0x560                                           0x560 // Unused Flag
+#define FLAG_UNUSED_0x561                                           0x561 // Unused Flag
+#define FLAG_UNUSED_0x562                                           0x562 // Unused Flag
+#define FLAG_UNUSED_0x563                                           0x563 // Unused Flag
+#define FLAG_UNUSED_0x564                                           0x564 // Unused Flag
+#define FLAG_UNUSED_0x565                                           0x565 // Unused Flag
+#define FLAG_UNUSED_0x566                                           0x566 // Unused Flag
+#define FLAG_UNUSED_0x567                                           0x567 // Unused Flag
+#define FLAG_UNUSED_0x568                                           0x568 // Unused Flag
+#define FLAG_UNUSED_0x569                                           0x569 // Unused Flag
+#define FLAG_UNUSED_0x56A                                           0x56A // Unused Flag
+#define FLAG_UNUSED_0x56B                                           0x56B // Unused Flag
+#define FLAG_UNUSED_0x56C                                           0x56C // Unused Flag
+#define FLAG_UNUSED_0x56D                                           0x56D // Unused Flag
+#define FLAG_UNUSED_0x56E                                           0x56E // Unused Flag
+#define FLAG_UNUSED_0x56F                                           0x56F // Unused Flag
+#define FLAG_UNUSED_0x570                                           0x570 // Unused Flag
+#define FLAG_UNUSED_0x571                                           0x571 // Unused Flag
+#define FLAG_UNUSED_0x572                                           0x572 // Unused Flag
+#define FLAG_UNUSED_0x573                                           0x573 // Unused Flag
+#define FLAG_UNUSED_0x574                                           0x574 // Unused Flag
+#define FLAG_UNUSED_0x575                                           0x575 // Unused Flag
+#define FLAG_UNUSED_0x576                                           0x576 // Unused Flag
+#define FLAG_UNUSED_0x577                                           0x577 // Unused Flag
+#define FLAG_UNUSED_0x578                                           0x578 // Unused Flag
+#define FLAG_UNUSED_0x579                                           0x579 // Unused Flag
+#define FLAG_UNUSED_0x57A                                           0x57A // Unused Flag
+#define FLAG_UNUSED_0x57B                                           0x57B // Unused Flag
+#define FLAG_UNUSED_0x57C                                           0x57C // Unused Flag
+#define FLAG_UNUSED_0x57D                                           0x57D // Unused Flag
+#define FLAG_UNUSED_0x57E                                           0x57E // Unused Flag
+#define FLAG_UNUSED_0x57F                                           0x57F // Unused Flag
+#define FLAG_UNUSED_0x580                                           0x580 // Unused Flag
+#define FLAG_UNUSED_0x581                                           0x581 // Unused Flag
+#define FLAG_UNUSED_0x582                                           0x582 // Unused Flag
+#define FLAG_UNUSED_0x583                                           0x583 // Unused Flag
+#define FLAG_UNUSED_0x584                                           0x584 // Unused Flag
+#define FLAG_UNUSED_0x585                                           0x585 // Unused Flag
+#define FLAG_UNUSED_0x586                                           0x586 // Unused Flag
+#define FLAG_UNUSED_0x587                                           0x587 // Unused Flag
+#define FLAG_UNUSED_0x588                                           0x588 // Unused Flag
+#define FLAG_UNUSED_0x589                                           0x589 // Unused Flag
+#define FLAG_UNUSED_0x58A                                           0x58A // Unused Flag
+#define FLAG_UNUSED_0x58B                                           0x58B // Unused Flag
+#define FLAG_UNUSED_0x58C                                           0x58C // Unused Flag
+#define FLAG_UNUSED_0x58D                                           0x58D // Unused Flag
+#define FLAG_UNUSED_0x58E                                           0x58E // Unused Flag
+#define FLAG_UNUSED_0x58F                                           0x58F // Unused Flag
+#define FLAG_UNUSED_0x590                                           0x590 // Unused Flag
+#define FLAG_UNUSED_0x591                                           0x591 // Unused Flag
+#define FLAG_UNUSED_0x592                                           0x592 // Unused Flag
+#define FLAG_UNUSED_0x593                                           0x593 // Unused Flag
+#define FLAG_UNUSED_0x594                                           0x594 // Unused Flag
+#define FLAG_UNUSED_0x595                                           0x595 // Unused Flag
+#define FLAG_UNUSED_0x596                                           0x596 // Unused Flag
+#define FLAG_UNUSED_0x597                                           0x597 // Unused Flag
+#define FLAG_UNUSED_0x598                                           0x598 // Unused Flag
+#define FLAG_UNUSED_0x599                                           0x599 // Unused Flag
+#define FLAG_UNUSED_0x59A                                           0x59A // Unused Flag
+#define FLAG_UNUSED_0x59B                                           0x59B // Unused Flag
+#define FLAG_UNUSED_0x59C                                           0x59C // Unused Flag
+#define FLAG_UNUSED_0x59D                                           0x59D // Unused Flag
+#define FLAG_UNUSED_0x59E                                           0x59E // Unused Flag
+#define FLAG_UNUSED_0x59F                                           0x59F // Unused Flag
+#define FLAG_UNUSED_0x600                                           0x600 // Unused Flag
+#define FLAG_UNUSED_0x601                                           0x601 // Unused Flag
+#define FLAG_UNUSED_0x602                                           0x602 // Unused Flag
+#define FLAG_UNUSED_0x603                                           0x603 // Unused Flag
+#define FLAG_UNUSED_0x604                                           0x604 // Unused Flag
+#define FLAG_UNUSED_0x605                                           0x605 // Unused Flag
+#define FLAG_UNUSED_0x606                                           0x606 // Unused Flag
+#define FLAG_UNUSED_0x607                                           0x607 // Unused Flag
+#define FLAG_UNUSED_0x608                                           0x608 // Unused Flag
+#define FLAG_UNUSED_0x609                                           0x609 // Unused Flag
+#define FLAG_UNUSED_0x60A                                           0x60A // Unused Flag
+#define FLAG_UNUSED_0x60B                                           0x60B // Unused Flag
+#define FLAG_UNUSED_0x60C                                           0x60C // Unused Flag
+#define FLAG_UNUSED_0x60D                                           0x60D // Unused Flag
+#define FLAG_UNUSED_0x60E                                           0x60E // Unused Flag
+#define FLAG_UNUSED_0x60F                                           0x60F // Unused Flag
+#define FLAG_UNUSED_0x610                                           0x610 // Unused Flag
+#define FLAG_UNUSED_0x611                                           0x611 // Unused Flag
+#define FLAG_UNUSED_0x612                                           0x612 // Unused Flag
+#define FLAG_UNUSED_0x613                                           0x613 // Unused Flag
+#define FLAG_UNUSED_0x614                                           0x614 // Unused Flag
+#define FLAG_UNUSED_0x615                                           0x615 // Unused Flag
+#define FLAG_UNUSED_0x616                                           0x616 // Unused Flag
+#define FLAG_UNUSED_0x617                                           0x617 // Unused Flag
+#define FLAG_UNUSED_0x618                                           0x618 // Unused Flag
+#define FLAG_UNUSED_0x619                                           0x619 // Unused Flag
+#define FLAG_UNUSED_0x61A                                           0x61A // Unused Flag
+#define FLAG_UNUSED_0x61B                                           0x61B // Unused Flag
+#define FLAG_UNUSED_0x61C                                           0x61C // Unused Flag
+#define FLAG_UNUSED_0x61D                                           0x61D // Unused Flag
+#define FLAG_UNUSED_0x61E                                           0x61E // Unused Flag
+#define FLAG_UNUSED_0x61F                                           0x61F // Unused Flag
+#define FLAG_UNUSED_0x620                                           0x620 // Unused Flag
+#define FLAG_UNUSED_0x621                                           0x621 // Unused Flag
+#define FLAG_UNUSED_0x622                                           0x622 // Unused Flag
+#define FLAG_UNUSED_0x623                                           0x623 // Unused Flag
+#define FLAG_UNUSED_0x624                                           0x624 // Unused Flag
+#define FLAG_UNUSED_0x625                                           0x625 // Unused Flag
+#define FLAG_UNUSED_0x626                                           0x626 // Unused Flag
+#define FLAG_UNUSED_0x627                                           0x627 // Unused Flag
+#define FLAG_UNUSED_0x628                                           0x628 // Unused Flag
+#define FLAG_UNUSED_0x629                                           0x629 // Unused Flag
+#define FLAG_UNUSED_0x62A                                           0x62A // Unused Flag
+#define FLAG_UNUSED_0x62B                                           0x62B // Unused Flag
+#define FLAG_UNUSED_0x62C                                           0x62C // Unused Flag
+#define FLAG_UNUSED_0x62D                                           0x62D // Unused Flag
+#define FLAG_UNUSED_0x62E                                           0x62E // Unused Flag
+#define FLAG_UNUSED_0x62F                                           0x62F // Unused Flag
+#define FLAG_UNUSED_0x630                                           0x630 // Unused Flag
+#define FLAG_UNUSED_0x631                                           0x631 // Unused Flag
+#define FLAG_UNUSED_0x632                                           0x632 // Unused Flag
+#define FLAG_UNUSED_0x633                                           0x633 // Unused Flag
+#define FLAG_UNUSED_0x634                                           0x634 // Unused Flag
+#define FLAG_UNUSED_0x635                                           0x635 // Unused Flag
+#define FLAG_UNUSED_0x636                                           0x636 // Unused Flag
+#define FLAG_UNUSED_0x637                                           0x637 // Unused Flag
+#define FLAG_UNUSED_0x638                                           0x638 // Unused Flag
+#define FLAG_UNUSED_0x639                                           0x639 // Unused Flag
+#define FLAG_UNUSED_0x63A                                           0x63A // Unused Flag
+#define FLAG_UNUSED_0x63B                                           0x63B // Unused Flag
+#define FLAG_UNUSED_0x63C                                           0x63C // Unused Flag
+#define FLAG_UNUSED_0x63D                                           0x63D // Unused Flag
+#define FLAG_UNUSED_0x63E                                           0x63E // Unused Flag
+#define FLAG_UNUSED_0x63F                                           0x63F // Unused Flag
+#define FLAG_UNUSED_0x640                                           0x640 // Unused Flag
+#define FLAG_UNUSED_0x641                                           0x641 // Unused Flag
+#define FLAG_UNUSED_0x642                                           0x642 // Unused Flag
+#define FLAG_UNUSED_0x643                                           0x643 // Unused Flag
+#define FLAG_UNUSED_0x644                                           0x644 // Unused Flag
+#define FLAG_UNUSED_0x645                                           0x645 // Unused Flag
+#define FLAG_UNUSED_0x646                                           0x646 // Unused Flag
+#define FLAG_UNUSED_0x647                                           0x647 // Unused Flag
+#define FLAG_UNUSED_0x648                                           0x648 // Unused Flag
+#define FLAG_UNUSED_0x649                                           0x649 // Unused Flag
+#define FLAG_UNUSED_0x64A                                           0x64A // Unused Flag
+#define FLAG_UNUSED_0x64B                                           0x64B // Unused Flag
+#define FLAG_UNUSED_0x64C                                           0x64C // Unused Flag
+#define FLAG_UNUSED_0x64D                                           0x64D // Unused Flag
+#define FLAG_UNUSED_0x64E                                           0x64E // Unused Flag
+#define FLAG_UNUSED_0x64F                                           0x64F // Unused Flag
+#define FLAG_UNUSED_0x640                                           0x640 // Unused Flag
+#define FLAG_UNUSED_0x641                                           0x641 // Unused Flag
+#define FLAG_UNUSED_0x642                                           0x642 // Unused Flag
+#define FLAG_UNUSED_0x643                                           0x643 // Unused Flag
+#define FLAG_UNUSED_0x644                                           0x644 // Unused Flag
+#define FLAG_UNUSED_0x645                                           0x645 // Unused Flag
+#define FLAG_UNUSED_0x646                                           0x646 // Unused Flag
+#define FLAG_UNUSED_0x647                                           0x647 // Unused Flag
+#define FLAG_UNUSED_0x648                                           0x648 // Unused Flag
+#define FLAG_UNUSED_0x649                                           0x649 // Unused Flag
+#define FLAG_UNUSED_0x64A                                           0x64A // Unused Flag
+#define FLAG_UNUSED_0x64B                                           0x64B // Unused Flag
+#define FLAG_UNUSED_0x64C                                           0x64C // Unused Flag
+#define FLAG_UNUSED_0x64D                                           0x64D // Unused Flag
+#define FLAG_UNUSED_0x64E                                           0x64E // Unused Flag
+#define FLAG_UNUSED_0x64F                                           0x64F // Unused Flag
+#define FLAG_UNUSED_0x650                                           0x650 // Unused Flag
+#define FLAG_UNUSED_0x651                                           0x651 // Unused Flag
+#define FLAG_UNUSED_0x652                                           0x652 // Unused Flag
+#define FLAG_UNUSED_0x653                                           0x653 // Unused Flag
+#define FLAG_UNUSED_0x654                                           0x654 // Unused Flag
+#define FLAG_UNUSED_0x655                                           0x655 // Unused Flag
+#define FLAG_UNUSED_0x656                                           0x656 // Unused Flag
+#define FLAG_UNUSED_0x657                                           0x657 // Unused Flag
+#define FLAG_UNUSED_0x658                                           0x658 // Unused Flag
+#define FLAG_UNUSED_0x659                                           0x659 // Unused Flag
+#define FLAG_UNUSED_0x65A                                           0x65A // Unused Flag
+#define FLAG_UNUSED_0x65B                                           0x65B // Unused Flag
+#define FLAG_UNUSED_0x65C                                           0x65C // Unused Flag
+#define FLAG_UNUSED_0x65D                                           0x65D // Unused Flag
+#define FLAG_UNUSED_0x65E                                           0x65E // Unused Flag
+#define FLAG_UNUSED_0x65F                                           0x65F // Unused Flag
+#define FLAG_UNUSED_0x660                                           0x660 // Unused Flag
+#define FLAG_UNUSED_0x661                                           0x661 // Unused Flag
+#define FLAG_UNUSED_0x662                                           0x662 // Unused Flag
+#define FLAG_UNUSED_0x663                                           0x663 // Unused Flag
+#define FLAG_UNUSED_0x664                                           0x664 // Unused Flag
+#define FLAG_UNUSED_0x665                                           0x665 // Unused Flag
+#define FLAG_UNUSED_0x666                                           0x666 // Unused Flag
+#define FLAG_UNUSED_0x667                                           0x667 // Unused Flag
+#define FLAG_UNUSED_0x668                                           0x668 // Unused Flag
+#define FLAG_UNUSED_0x669                                           0x669 // Unused Flag
+#define FLAG_UNUSED_0x66A                                           0x66A // Unused Flag
+#define FLAG_UNUSED_0x66B                                           0x66B // Unused Flag
+#define FLAG_UNUSED_0x66C                                           0x66C // Unused Flag
+#define FLAG_UNUSED_0x66D                                           0x66D // Unused Flag
+#define FLAG_UNUSED_0x66E                                           0x66E // Unused Flag
+#define FLAG_UNUSED_0x66F                                           0x66F // Unused Flag
+#define FLAG_UNUSED_0x670                                           0x670 // Unused Flag
+#define FLAG_UNUSED_0x671                                           0x671 // Unused Flag
+#define FLAG_UNUSED_0x672                                           0x672 // Unused Flag
+#define FLAG_UNUSED_0x673                                           0x673 // Unused Flag
+#define FLAG_UNUSED_0x674                                           0x674 // Unused Flag
+#define FLAG_UNUSED_0x675                                           0x675 // Unused Flag
+#define FLAG_UNUSED_0x676                                           0x676 // Unused Flag
+#define FLAG_UNUSED_0x677                                           0x677 // Unused Flag
+#define FLAG_UNUSED_0x678                                           0x678 // Unused Flag
+#define FLAG_UNUSED_0x679                                           0x679 // Unused Flag
+#define FLAG_UNUSED_0x67A                                           0x67A // Unused Flag
+#define FLAG_UNUSED_0x67B                                           0x67B // Unused Flag
+#define FLAG_UNUSED_0x67C                                           0x67C // Unused Flag
+#define FLAG_UNUSED_0x67D                                           0x67D // Unused Flag
+#define FLAG_UNUSED_0x67E                                           0x67E // Unused Flag
+#define FLAG_UNUSED_0x67F                                           0x67F // Unused Flag
+#define FLAG_UNUSED_0x680                                           0x680 // Unused Flag
+#define FLAG_UNUSED_0x681                                           0x681 // Unused Flag
+#define FLAG_UNUSED_0x682                                           0x682 // Unused Flag
+#define FLAG_UNUSED_0x683                                           0x683 // Unused Flag
+#define FLAG_UNUSED_0x684                                           0x684 // Unused Flag
+#define FLAG_UNUSED_0x685                                           0x685 // Unused Flag
+#define FLAG_UNUSED_0x686                                           0x686 // Unused Flag
+#define FLAG_UNUSED_0x687                                           0x687 // Unused Flag
+#define FLAG_UNUSED_0x688                                           0x688 // Unused Flag
+#define FLAG_UNUSED_0x689                                           0x689 // Unused Flag
+#define FLAG_UNUSED_0x68A                                           0x68A // Unused Flag
+#define FLAG_UNUSED_0x68B                                           0x68B // Unused Flag
+#define FLAG_UNUSED_0x68C                                           0x68C // Unused Flag
+#define FLAG_UNUSED_0x68D                                           0x68D // Unused Flag
+#define FLAG_UNUSED_0x68E                                           0x68E // Unused Flag
+#define FLAG_UNUSED_0x68F                                           0x68F // Unused Flag
+#define FLAG_UNUSED_0x690                                           0x690 // Unused Flag
+#define FLAG_UNUSED_0x691                                           0x691 // Unused Flag
+#define FLAG_UNUSED_0x692                                           0x692 // Unused Flag
+#define FLAG_UNUSED_0x693                                           0x693 // Unused Flag
+#define FLAG_UNUSED_0x694                                           0x694 // Unused Flag
+#define FLAG_UNUSED_0x695                                           0x695 // Unused Flag
+#define FLAG_UNUSED_0x696                                           0x696 // Unused Flag
+#define FLAG_UNUSED_0x697                                           0x697 // Unused Flag
+#define FLAG_UNUSED_0x698                                           0x698 // Unused Flag
+#define FLAG_UNUSED_0x699                                           0x699 // Unused Flag
+#define FLAG_UNUSED_0x69A                                           0x69A // Unused Flag
+#define FLAG_UNUSED_0x69B                                           0x69B // Unused Flag
+#define FLAG_UNUSED_0x69C                                           0x69C // Unused Flag
+#define FLAG_UNUSED_0x69D                                           0x69D // Unused Flag
+#define FLAG_UNUSED_0x69E                                           0x69E // Unused Flag
+#define FLAG_UNUSED_0x69F                                           0x69F // Unused Flag
+#define FLAG_UNUSED_0x700                                           0x700 // Unused Flag
+#define FLAG_UNUSED_0x701                                           0x701 // Unused Flag
+#define FLAG_UNUSED_0x702                                           0x702 // Unused Flag
+#define FLAG_UNUSED_0x703                                           0x703 // Unused Flag
+#define FLAG_UNUSED_0x704                                           0x704 // Unused Flag
+#define FLAG_UNUSED_0x705                                           0x705 // Unused Flag
+#define FLAG_UNUSED_0x706                                           0x706 // Unused Flag
+#define FLAG_UNUSED_0x707                                           0x707 // Unused Flag
+#define FLAG_UNUSED_0x708                                           0x708 // Unused Flag
+#define FLAG_UNUSED_0x709                                           0x709 // Unused Flag
+#define FLAG_UNUSED_0x70A                                           0x70A // Unused Flag
+#define FLAG_UNUSED_0x70B                                           0x70B // Unused Flag
+#define FLAG_UNUSED_0x70C                                           0x70C // Unused Flag
+#define FLAG_UNUSED_0x70D                                           0x70D // Unused Flag
+#define FLAG_UNUSED_0x70E                                           0x70E // Unused Flag
+#define FLAG_UNUSED_0x70F                                           0x70F // Unused Flag
+#define FLAG_UNUSED_0x710                                           0x710 // Unused Flag
+#define FLAG_UNUSED_0x711                                           0x711 // Unused Flag
+#define FLAG_UNUSED_0x712                                           0x712 // Unused Flag
+#define FLAG_UNUSED_0x713                                           0x713 // Unused Flag
+#define FLAG_UNUSED_0x714                                           0x714 // Unused Flag
+#define FLAG_UNUSED_0x715                                           0x715 // Unused Flag
+#define FLAG_UNUSED_0x716                                           0x716 // Unused Flag
+#define FLAG_UNUSED_0x717                                           0x717 // Unused Flag
+#define FLAG_UNUSED_0x718                                           0x718 // Unused Flag
+#define FLAG_UNUSED_0x719                                           0x719 // Unused Flag
+#define FLAG_UNUSED_0x71A                                           0x71A // Unused Flag
+#define FLAG_UNUSED_0x71B                                           0x71B // Unused Flag
+#define FLAG_UNUSED_0x71C                                           0x71C // Unused Flag
+#define FLAG_UNUSED_0x71D                                           0x71D // Unused Flag
+#define FLAG_UNUSED_0x71E                                           0x71E // Unused Flag
+#define FLAG_UNUSED_0x71F                                           0x71F // Unused Flag
+#define FLAG_UNUSED_0x720                                           0x720 // Unused Flag
+#define FLAG_UNUSED_0x721                                           0x721 // Unused Flag
+#define FLAG_UNUSED_0x722                                           0x722 // Unused Flag
+#define FLAG_UNUSED_0x723                                           0x723 // Unused Flag
+#define FLAG_UNUSED_0x724                                           0x724 // Unused Flag
+#define FLAG_UNUSED_0x725                                           0x725 // Unused Flag
+#define FLAG_UNUSED_0x726                                           0x726 // Unused Flag
+#define FLAG_UNUSED_0x727                                           0x727 // Unused Flag
+#define FLAG_UNUSED_0x728                                           0x728 // Unused Flag
+#define FLAG_UNUSED_0x729                                           0x729 // Unused Flag
+#define FLAG_UNUSED_0x72A                                           0x72A // Unused Flag
+#define FLAG_UNUSED_0x72B                                           0x72B // Unused Flag
+#define FLAG_UNUSED_0x72C                                           0x72C // Unused Flag
+#define FLAG_UNUSED_0x72D                                           0x72D // Unused Flag
+#define FLAG_UNUSED_0x72E                                           0x72E // Unused Flag
+#define FLAG_UNUSED_0x72F                                           0x72F // Unused Flag
+#define FLAG_UNUSED_0x730                                           0x730 // Unused Flag
+#define FLAG_UNUSED_0x731                                           0x731 // Unused Flag
+#define FLAG_UNUSED_0x732                                           0x732 // Unused Flag
+#define FLAG_UNUSED_0x733                                           0x733 // Unused Flag
+#define FLAG_UNUSED_0x734                                           0x734 // Unused Flag
+#define FLAG_UNUSED_0x735                                           0x735 // Unused Flag
+#define FLAG_UNUSED_0x736                                           0x736 // Unused Flag
+#define FLAG_UNUSED_0x737                                           0x737 // Unused Flag
+#define FLAG_UNUSED_0x738                                           0x738 // Unused Flag
+#define FLAG_UNUSED_0x739                                           0x739 // Unused Flag
+#define FLAG_UNUSED_0x73A                                           0x73A // Unused Flag
+#define FLAG_UNUSED_0x73B                                           0x73B // Unused Flag
+#define FLAG_UNUSED_0x73C                                           0x73C // Unused Flag
+#define FLAG_UNUSED_0x73D                                           0x73D // Unused Flag
+#define FLAG_UNUSED_0x73E                                           0x73E // Unused Flag
+#define FLAG_UNUSED_0x73F                                           0x73F // Unused Flag
+#define FLAG_UNUSED_0x740                                           0x740 // Unused Flag
+#define FLAG_UNUSED_0x741                                           0x741 // Unused Flag
+#define FLAG_UNUSED_0x742                                           0x742 // Unused Flag
+#define FLAG_UNUSED_0x743                                           0x743 // Unused Flag
+#define FLAG_UNUSED_0x744                                           0x744 // Unused Flag
+#define FLAG_UNUSED_0x745                                           0x745 // Unused Flag
+#define FLAG_UNUSED_0x746                                           0x746 // Unused Flag
+#define FLAG_UNUSED_0x747                                           0x747 // Unused Flag
+#define FLAG_UNUSED_0x748                                           0x748 // Unused Flag
+#define FLAG_UNUSED_0x749                                           0x749 // Unused Flag
+#define FLAG_UNUSED_0x74A                                           0x74A // Unused Flag
+#define FLAG_UNUSED_0x74B                                           0x74B // Unused Flag
+#define FLAG_UNUSED_0x74C                                           0x74C // Unused Flag
+#define FLAG_UNUSED_0x74D                                           0x74D // Unused Flag
+#define FLAG_UNUSED_0x74E                                           0x74E // Unused Flag
+#define FLAG_UNUSED_0x74F                                           0x74F // Unused Flag
+#define FLAG_UNUSED_0x740                                           0x740 // Unused Flag
+#define FLAG_UNUSED_0x741                                           0x741 // Unused Flag
+#define FLAG_UNUSED_0x742                                           0x742 // Unused Flag
+#define FLAG_UNUSED_0x743                                           0x743 // Unused Flag
+#define FLAG_UNUSED_0x744                                           0x744 // Unused Flag
+#define FLAG_UNUSED_0x745                                           0x745 // Unused Flag
+#define FLAG_UNUSED_0x746                                           0x746 // Unused Flag
+#define FLAG_UNUSED_0x747                                           0x747 // Unused Flag
+#define FLAG_UNUSED_0x748                                           0x748 // Unused Flag
+#define FLAG_UNUSED_0x749                                           0x749 // Unused Flag
+#define FLAG_UNUSED_0x74A                                           0x74A // Unused Flag
+#define FLAG_UNUSED_0x74B                                           0x74B // Unused Flag
+#define FLAG_UNUSED_0x74C                                           0x74C // Unused Flag
+#define FLAG_UNUSED_0x74D                                           0x74D // Unused Flag
+#define FLAG_UNUSED_0x74E                                           0x74E // Unused Flag
+#define FLAG_UNUSED_0x74F                                           0x74F // Unused Flag
+#define FLAG_UNUSED_0x750                                           0x750 // Unused Flag
+#define FLAG_UNUSED_0x751                                           0x751 // Unused Flag
+#define FLAG_UNUSED_0x752                                           0x752 // Unused Flag
+#define FLAG_UNUSED_0x753                                           0x753 // Unused Flag
+#define FLAG_UNUSED_0x754                                           0x754 // Unused Flag
+#define FLAG_UNUSED_0x755                                           0x755 // Unused Flag
+#define FLAG_UNUSED_0x756                                           0x756 // Unused Flag
+#define FLAG_UNUSED_0x757                                           0x757 // Unused Flag
+#define FLAG_UNUSED_0x758                                           0x758 // Unused Flag
+#define FLAG_UNUSED_0x759                                           0x759 // Unused Flag
+#define FLAG_UNUSED_0x75A                                           0x75A // Unused Flag
+#define FLAG_UNUSED_0x75B                                           0x75B // Unused Flag
+#define FLAG_UNUSED_0x75C                                           0x75C // Unused Flag
+#define FLAG_UNUSED_0x75D                                           0x75D // Unused Flag
+#define FLAG_UNUSED_0x75E                                           0x75E // Unused Flag
+#define FLAG_UNUSED_0x75F                                           0x75F // Unused Flag
+#define FLAG_UNUSED_0x760                                           0x760 // Unused Flag
+#define FLAG_UNUSED_0x761                                           0x761 // Unused Flag
+#define FLAG_UNUSED_0x762                                           0x762 // Unused Flag
+#define FLAG_UNUSED_0x763                                           0x763 // Unused Flag
+#define FLAG_UNUSED_0x764                                           0x764 // Unused Flag
+#define FLAG_UNUSED_0x765                                           0x765 // Unused Flag
+#define FLAG_UNUSED_0x766                                           0x766 // Unused Flag
+#define FLAG_UNUSED_0x767                                           0x767 // Unused Flag
+#define FLAG_UNUSED_0x768                                           0x768 // Unused Flag
+#define FLAG_UNUSED_0x769                                           0x769 // Unused Flag
+#define FLAG_UNUSED_0x76A                                           0x76A // Unused Flag
+#define FLAG_UNUSED_0x76B                                           0x76B // Unused Flag
+#define FLAG_UNUSED_0x76C                                           0x76C // Unused Flag
+#define FLAG_UNUSED_0x76D                                           0x76D // Unused Flag
+#define FLAG_UNUSED_0x76E                                           0x76E // Unused Flag
+#define FLAG_UNUSED_0x76F                                           0x76F // Unused Flag
+#define FLAG_UNUSED_0x770                                           0x770 // Unused Flag
+#define FLAG_UNUSED_0x771                                           0x771 // Unused Flag
+#define FLAG_UNUSED_0x772                                           0x772 // Unused Flag
+#define FLAG_UNUSED_0x773                                           0x773 // Unused Flag
+#define FLAG_UNUSED_0x774                                           0x774 // Unused Flag
+#define FLAG_UNUSED_0x775                                           0x775 // Unused Flag
+#define FLAG_UNUSED_0x776                                           0x776 // Unused Flag
+#define FLAG_UNUSED_0x777                                           0x777 // Unused Flag
+#define FLAG_UNUSED_0x778                                           0x778 // Unused Flag
+#define FLAG_UNUSED_0x779                                           0x779 // Unused Flag
+#define FLAG_UNUSED_0x77A                                           0x77A // Unused Flag
+#define FLAG_UNUSED_0x77B                                           0x77B // Unused Flag
+#define FLAG_UNUSED_0x77C                                           0x77C // Unused Flag
+#define FLAG_UNUSED_0x77D                                           0x77D // Unused Flag
+#define FLAG_UNUSED_0x77E                                           0x77E // Unused Flag
+#define FLAG_UNUSED_0x77F                                           0x77F // Unused Flag
+#define FLAG_UNUSED_0x780                                           0x780 // Unused Flag
+#define FLAG_UNUSED_0x781                                           0x781 // Unused Flag
+#define FLAG_UNUSED_0x782                                           0x782 // Unused Flag
+#define FLAG_UNUSED_0x783                                           0x783 // Unused Flag
+#define FLAG_UNUSED_0x784                                           0x784 // Unused Flag
+#define FLAG_UNUSED_0x785                                           0x785 // Unused Flag
+#define FLAG_UNUSED_0x786                                           0x786 // Unused Flag
+#define FLAG_UNUSED_0x787                                           0x787 // Unused Flag
+#define FLAG_UNUSED_0x788                                           0x788 // Unused Flag
+#define FLAG_UNUSED_0x789                                           0x789 // Unused Flag
+#define FLAG_UNUSED_0x78A                                           0x78A // Unused Flag
+#define FLAG_UNUSED_0x78B                                           0x78B // Unused Flag
+#define FLAG_UNUSED_0x78C                                           0x78C // Unused Flag
+#define FLAG_UNUSED_0x78D                                           0x78D // Unused Flag
+#define FLAG_UNUSED_0x78E                                           0x78E // Unused Flag
+#define FLAG_UNUSED_0x78F                                           0x78F // Unused Flag
+#define FLAG_UNUSED_0x790                                           0x790 // Unused Flag
+#define FLAG_UNUSED_0x791                                           0x791 // Unused Flag
+#define FLAG_UNUSED_0x792                                           0x792 // Unused Flag
+#define FLAG_UNUSED_0x793                                           0x793 // Unused Flag
+#define FLAG_UNUSED_0x794                                           0x794 // Unused Flag
+#define FLAG_UNUSED_0x795                                           0x795 // Unused Flag
+#define FLAG_UNUSED_0x796                                           0x796 // Unused Flag
+#define FLAG_UNUSED_0x797                                           0x797 // Unused Flag
+#define FLAG_UNUSED_0x798                                           0x798 // Unused Flag
+#define FLAG_UNUSED_0x799                                           0x799 // Unused Flag
+#define FLAG_UNUSED_0x79A                                           0x79A // Unused Flag
+#define FLAG_UNUSED_0x79B                                           0x79B // Unused Flag
+#define FLAG_UNUSED_0x79C                                           0x79C // Unused Flag
+#define FLAG_UNUSED_0x79D                                           0x79D // Unused Flag
+#define FLAG_UNUSED_0x79E                                           0x79E // Unused Flag
+#define FLAG_UNUSED_0x79F                                           0x79F // Unused Flag
+#define FLAG_UNUSED_0x800                                           0x800 // Unused Flag
+#define FLAG_UNUSED_0x801                                           0x801 // Unused Flag
+#define FLAG_UNUSED_0x802                                           0x802 // Unused Flag
+#define FLAG_UNUSED_0x803                                           0x803 // Unused Flag
+#define FLAG_UNUSED_0x804                                           0x804 // Unused Flag
+#define FLAG_UNUSED_0x805                                           0x805 // Unused Flag
+#define FLAG_UNUSED_0x806                                           0x806 // Unused Flag
+#define FLAG_UNUSED_0x807                                           0x807 // Unused Flag
+#define FLAG_UNUSED_0x808                                           0x808 // Unused Flag
+#define FLAG_UNUSED_0x809                                           0x809 // Unused Flag
+#define FLAG_UNUSED_0x80A                                           0x80A // Unused Flag
+#define FLAG_UNUSED_0x80B                                           0x80B // Unused Flag
+#define FLAG_UNUSED_0x80C                                           0x80C // Unused Flag
+#define FLAG_UNUSED_0x80D                                           0x80D // Unused Flag
+#define FLAG_UNUSED_0x80E                                           0x80E // Unused Flag
+#define FLAG_UNUSED_0x80F                                           0x80F // Unused Flag
+#define FLAG_UNUSED_0x810                                           0x810 // Unused Flag
+#define FLAG_UNUSED_0x811                                           0x811 // Unused Flag
+#define FLAG_UNUSED_0x812                                           0x812 // Unused Flag
+#define FLAG_UNUSED_0x813                                           0x813 // Unused Flag
+#define FLAG_UNUSED_0x814                                           0x814 // Unused Flag
+#define FLAG_UNUSED_0x815                                           0x815 // Unused Flag
+#define FLAG_UNUSED_0x816                                           0x816 // Unused Flag
+#define FLAG_UNUSED_0x817                                           0x817 // Unused Flag
+#define FLAG_UNUSED_0x818                                           0x818 // Unused Flag
+#define FLAG_UNUSED_0x819                                           0x819 // Unused Flag
+#define FLAG_UNUSED_0x81A                                           0x81A // Unused Flag
+#define FLAG_UNUSED_0x81B                                           0x81B // Unused Flag
+#define FLAG_UNUSED_0x81C                                           0x81C // Unused Flag
+#define FLAG_UNUSED_0x81D                                           0x81D // Unused Flag
+#define FLAG_UNUSED_0x81E                                           0x81E // Unused Flag
+#define FLAG_UNUSED_0x81F                                           0x81F // Unused Flag
+#define FLAG_UNUSED_0x820                                           0x820 // Unused Flag
+#define FLAG_UNUSED_0x821                                           0x821 // Unused Flag
+#define FLAG_UNUSED_0x822                                           0x822 // Unused Flag
+#define FLAG_UNUSED_0x823                                           0x823 // Unused Flag
+#define FLAG_UNUSED_0x824                                           0x824 // Unused Flag
+#define FLAG_UNUSED_0x825                                           0x825 // Unused Flag
+#define FLAG_UNUSED_0x826                                           0x826 // Unused Flag
+#define FLAG_UNUSED_0x827                                           0x827 // Unused Flag
+#define FLAG_UNUSED_0x828                                           0x828 // Unused Flag
+#define FLAG_UNUSED_0x829                                           0x829 // Unused Flag
+#define FLAG_UNUSED_0x82A                                           0x82A // Unused Flag
+#define FLAG_UNUSED_0x82B                                           0x82B // Unused Flag
+#define FLAG_UNUSED_0x82C                                           0x82C // Unused Flag
+#define FLAG_UNUSED_0x82D                                           0x82D // Unused Flag
+#define FLAG_UNUSED_0x82E                                           0x82E // Unused Flag
+#define FLAG_UNUSED_0x82F                                           0x82F // Unused Flag
+#define FLAG_UNUSED_0x830                                           0x830 // Unused Flag
+#define FLAG_UNUSED_0x831                                           0x831 // Unused Flag
+#define FLAG_UNUSED_0x832                                           0x832 // Unused Flag
+#define FLAG_UNUSED_0x833                                           0x833 // Unused Flag
+#define FLAG_UNUSED_0x834                                           0x834 // Unused Flag
+#define FLAG_UNUSED_0x835                                           0x835 // Unused Flag
+#define FLAG_UNUSED_0x836                                           0x836 // Unused Flag
+#define FLAG_UNUSED_0x837                                           0x837 // Unused Flag
+#define FLAG_UNUSED_0x838                                           0x838 // Unused Flag
+#define FLAG_UNUSED_0x839                                           0x839 // Unused Flag
+#define FLAG_UNUSED_0x83A                                           0x83A // Unused Flag
+#define FLAG_UNUSED_0x83B                                           0x83B // Unused Flag
+#define FLAG_UNUSED_0x83C                                           0x83C // Unused Flag
+#define FLAG_UNUSED_0x83D                                           0x83D // Unused Flag
+#define FLAG_UNUSED_0x83E                                           0x83E // Unused Flag
+#define FLAG_UNUSED_0x83F                                           0x83F // Unused Flag
+#define FLAG_UNUSED_0x840                                           0x840 // Unused Flag
+#define FLAG_UNUSED_0x841                                           0x841 // Unused Flag
+#define FLAG_UNUSED_0x842                                           0x842 // Unused Flag
+#define FLAG_UNUSED_0x843                                           0x843 // Unused Flag
+#define FLAG_UNUSED_0x844                                           0x844 // Unused Flag
+#define FLAG_UNUSED_0x845                                           0x845 // Unused Flag
+#define FLAG_UNUSED_0x846                                           0x846 // Unused Flag
+#define FLAG_UNUSED_0x847                                           0x847 // Unused Flag
+#define FLAG_UNUSED_0x848                                           0x848 // Unused Flag
+#define FLAG_UNUSED_0x849                                           0x849 // Unused Flag
+#define FLAG_UNUSED_0x84A                                           0x84A // Unused Flag
+#define FLAG_UNUSED_0x84B                                           0x84B // Unused Flag
+#define FLAG_UNUSED_0x84C                                           0x84C // Unused Flag
+#define FLAG_UNUSED_0x84D                                           0x84D // Unused Flag
+#define FLAG_UNUSED_0x84E                                           0x84E // Unused Flag
+#define FLAG_UNUSED_0x84F                                           0x84F // Unused Flag
+#define FLAG_UNUSED_0x840                                           0x840 // Unused Flag
+#define FLAG_UNUSED_0x841                                           0x841 // Unused Flag
+#define FLAG_UNUSED_0x842                                           0x842 // Unused Flag
+#define FLAG_UNUSED_0x843                                           0x843 // Unused Flag
+#define FLAG_UNUSED_0x844                                           0x844 // Unused Flag
+#define FLAG_UNUSED_0x845                                           0x845 // Unused Flag
+#define FLAG_UNUSED_0x846                                           0x846 // Unused Flag
+#define FLAG_UNUSED_0x847                                           0x847 // Unused Flag
+#define FLAG_UNUSED_0x848                                           0x848 // Unused Flag
+#define FLAG_UNUSED_0x849                                           0x849 // Unused Flag
+#define FLAG_UNUSED_0x84A                                           0x84A // Unused Flag
+#define FLAG_UNUSED_0x84B                                           0x84B // Unused Flag
+#define FLAG_UNUSED_0x84C                                           0x84C // Unused Flag
+#define FLAG_UNUSED_0x84D                                           0x84D // Unused Flag
+#define FLAG_UNUSED_0x84E                                           0x84E // Unused Flag
+#define FLAG_UNUSED_0x84F                                           0x84F // Unused Flag
+#define FLAG_UNUSED_0x850                                           0x850 // Unused Flag
+#define FLAG_UNUSED_0x851                                           0x851 // Unused Flag
+#define FLAG_UNUSED_0x852                                           0x852 // Unused Flag
+#define FLAG_UNUSED_0x853                                           0x853 // Unused Flag
+#define FLAG_UNUSED_0x854                                           0x854 // Unused Flag
+#define FLAG_UNUSED_0x855                                           0x855 // Unused Flag
+#define FLAG_UNUSED_0x856                                           0x856 // Unused Flag
+#define FLAG_UNUSED_0x857                                           0x857 // Unused Flag
+#define FLAG_UNUSED_0x858                                           0x858 // Unused Flag
+#define FLAG_UNUSED_0x859                                           0x859 // Unused Flag
+#define FLAG_UNUSED_0x85A                                           0x85A // Unused Flag
+#define FLAG_UNUSED_0x85B                                           0x85B // Unused Flag
+#define FLAG_UNUSED_0x85C                                           0x85C // Unused Flag
+#define FLAG_UNUSED_0x85D                                           0x85D // Unused Flag
+#define FLAG_UNUSED_0x85E                                           0x85E // Unused Flag
 
-#define TRAINER_FLAGS_START                                         0x500
+
+// Trainer Flags
+// Trainer flags occupy 0x500 - 0x85F, the last 9 of which are unused  <<< IGNORE THIS, its been updated to 0x1000+
+// See constants/opponents.h. The values there + FLAG_TRAINER_FLAG_START are the flag IDs  
+// You can add unused flags up to 0x85F above. ^^^
+
+#define TRAINER_FLAGS_START                                         0x1000
 #define TRAINER_FLAGS_END                                           (TRAINER_FLAGS_START + MAX_TRAINERS_COUNT - 1) // 0x85F
 
 // System Flags
 
-#define SYSTEM_FLAGS                                   (TRAINER_FLAGS_END + 1) // 0x860
+#define SYSTEM_FLAGS                                   (0x85F + 1) // 0x860
 
-#define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860
+#define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860 / Int 2144
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
 #define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
 #define FLAG_UNUSED_0x863                            (SYSTEM_FLAGS + 0x3) // Unused Flag
@@ -1387,13 +2029,15 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
+#define FLAG_SUPPRESS_SPEAKER_NAME                  (SYSTEM_FLAGS + 0x21)
 #define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
-#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
-#define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
-#define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
+// Start qol_field_moves
+#define FLAG_SYS_USE_CUT                            (SYSTEM_FLAGS + 0x24)
+#define FLAG_SYS_USE_SURF                           (SYSTEM_FLAGS + 0x25)
+#define FLAG_SYS_USE_ROCK_SMASH                     (SYSTEM_FLAGS + 0x26)
+#define FLAG_SYS_USE_WATERFALL                      (SYSTEM_FLAGS + 0x27)
+// End qol_field_moves
 
 #define FLAG_SYS_USE_FLASH                          (SYSTEM_FLAGS + 0x28)
 #define FLAG_SYS_USE_STRENGTH                       (SYSTEM_FLAGS + 0x29)

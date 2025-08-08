@@ -11,6 +11,8 @@
 #define STD_WINDOW_PALETTE_SIZE PLTT_SIZEOF(10)
 #define STD_WINDOW_BASE_TILE_NUM 0x214
 
+#define DLW_WIN_PLATE_SIZE  8
+
 #define MENU_NOTHING_CHOSEN -2
 #define MENU_B_PRESSED -1
 
@@ -55,6 +57,7 @@ void InitTextBoxGfxAndPrinters(void);
 u16 RunTextPrintersAndIsPrinter0Active(void);
 void LoadMessageBoxAndBorderGfx(void);
 void DrawDialogueFrame(u8 windowId, bool8 copyToVram);
+void DrawDialogueFrameWithNameplate(u8 windowId, bool8 copyToVram);
 void ClearStdWindowAndFrame(u8 windowId, bool8 copyToVram);
 u16 AddTextPrinterParameterized2(u8 windowId, u8 fontId, const u8 *str, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16), u8 fgColor, u8 bgColor, u8 shadowColor);
 void PrintPlayerNameOnWindow(u8, const u8 *, u16, u16);
@@ -113,6 +116,7 @@ void BufferSaveMenuText(u8 textId, u8 *dest, u8 color);
 void RemoveMapNamePopUpWindow(void);
 u8 GetMapNamePopUpWindowId(void);
 u8 AddMapNamePopUpWindow(void);
+u16 AddWindowParameterized(u8, u8, u8, u8, u8, u8, u16);
 void AddTextPrinterParameterized5(u8 windowId, u8 fontId, const u8 *str, u8 left, u8 top, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16), u8 letterSpacing, u8 lineSpacing);
 void SetBgTilemapPalette(u8 bgId, u8 left, u8 top, u8 width, u8 height, u8 palette);
 void AddValToTilemapBuffer(void *ptr, int delta, int width, int height, bool32 is8BPP);

@@ -299,7 +299,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_PIDGEOTITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_PP_UP"
     },
@@ -370,14 +370,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 29,
-      "y": 53,
+      "x": 25,
+      "y": 52,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POKE_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_GRENINJATITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
     },
@@ -471,6 +471,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route104_EventScript_Rival",
       "flag": "FLAG_HIDE_ROUTE_104_RIVAL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 23,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TOWN_MAP",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 26,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MACH_BIKE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 23,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_COMET_SHARD",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_TEMP_11"
     }
   ],
   "warp_events": [
@@ -478,7 +517,7 @@
       "x": 17,
       "y": 50,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE104_MR_BRINEYS_HOUSE",
+      "dest_map": "MAP_DESERT_CAVE",
       "dest_warp_id": "0"
     },
     {

@@ -355,7 +355,7 @@
       "id": "LAYOUT_ROUTE120",
       "name": "Route120_Layout",
       "width": 40,
-      "height": 100,
+      "height": 140,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route120/border.bin",
@@ -374,7 +374,7 @@
     {
       "id": "LAYOUT_ROUTE122",
       "name": "Route122_Layout",
-      "width": 40,
+      "width": 47,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
@@ -4410,6 +4410,196 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIMEWARP_CAVE",
+      "name": "TimewarpCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TimewarpCave/border.bin",
+      "blockdata_filepath": "data/layouts/TimewarpCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_BEACH",
+      "name": "DewfordBeach_Layout",
+      "width": 70,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/DewfordBeach/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordBeach/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_TOWN_HOUSE3",
+      "name": "DewfordTown_House3_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DewfordTown_House3/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_TOWN_HOUSE4",
+      "name": "DewfordTown_House4_Layout",
+      "width": 16,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/DewfordTown_House4/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordTown_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_SLATEPORT_RIVER",
+      "name": "NorthSlateportRiver_Layout",
+      "width": 54,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/NorthSlateportRiver/border.bin",
+      "blockdata_filepath": "data/layouts/NorthSlateportRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUTH_SLATEPORT_RIVER",
+      "name": "SouthSlateportRiver_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/SouthSlateportRiver/border.bin",
+      "blockdata_filepath": "data/layouts/SouthSlateportRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVILLE_RIVER",
+      "name": "MauvilleRiver_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/MauvilleRiver/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTLEAF_BUSH",
+      "name": "LostleafBush_Layout",
+      "width": 24,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/LostleafBush/border.bin",
+      "blockdata_filepath": "data/layouts/LostleafBush/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROSTBITE_CAVE_1F",
+      "name": "FrostbiteCave_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FrostbiteCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/FrostbiteCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROSTBITE_CAVE_B1F",
+      "name": "FrostbiteCave_B1F_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FrostbiteCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/FrostbiteCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DESERT_EXTENSION",
+      "name": "DesertExtension_Layout",
+      "width": 40,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/DesertExtension/border.bin",
+      "blockdata_filepath": "data/layouts/DesertExtension/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_FALLARBOR",
+      "name": "NorthFallarbor_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/NorthFallarbor/border.bin",
+      "blockdata_filepath": "data/layouts/NorthFallarbor/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKULL_FOSSIL_CAVE",
+      "name": "SkullFossilCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SkullFossilCave/border.bin",
+      "blockdata_filepath": "data/layouts/SkullFossilCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHIELD_FOSSIL_CAVE",
+      "name": "ShieldFossilCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ShieldFossilCave/border.bin",
+      "blockdata_filepath": "data/layouts/ShieldFossilCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_COASTAL_CAVE_1F",
+      "name": "CoastalCave_1F_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CoastalCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/CoastalCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_FALLS_OLD_AMBER_ROOM",
+      "name": "MeteorFalls_OldAmber_Room_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorFalls_OldAmber_Room/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorFalls_OldAmber_Room/map.bin"
+    },
+    {
+      "id": "LAYOUT_COASTAL_CAVE_B1F",
+      "name": "CoastalCave_B1F_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CoastalCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/CoastalCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_COASTAL_CAVE_WATER_ROOM",
+      "name": "CoastalCave_WaterRoom_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CoastalCave_WaterRoom/border.bin",
+      "blockdata_filepath": "data/layouts/CoastalCave_WaterRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DESERT_CAVE",
+      "name": "DesertCave_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DesertCave/border.bin",
+      "blockdata_filepath": "data/layouts/DesertCave/map.bin"
     }
   ]
 }

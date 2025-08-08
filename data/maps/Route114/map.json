@@ -22,6 +22,11 @@
       "map": "MAP_FALLARBOR_TOWN",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_NORTH_FALLARBOR",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -375,6 +380,32 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route114_EventScript_Kai",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ALTARIANITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ALTARIANITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 18,
+      "y": 71,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TIMID_MINT",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_TIMID_MINT"
     }
   ],
   "warp_events": [
@@ -414,7 +445,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

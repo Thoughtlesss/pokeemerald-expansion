@@ -4794,3 +4794,140 @@ VSSeeker_Text_TrainersNotReady::
 	.string "The other Trainers don't appear\n"
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
+
+DesertExt_Text_Trainer1Intro:
+	.string "Have you found any fossils\n"
+	.string "here yet?$"
+
+DesertExt_Text_Trainer1Defeat:
+	.string "I haven't been able to find any.$"
+
+DesertExt_Text_Trainer1PostBattle:
+	.string "There's lot of fossils in Hoenn.\n"
+	.string "Check around caves to find them.$"
+
+CoastalCave_Trainer1Intro:
+	.string "I heard there were some rare\n"
+	.string "POKéMON somewhere deeper in.?$"
+
+CoastalCave_Trainer1Defeat:
+	.string "Seems you're better equipped\n"
+	.string "to go down there.$"
+
+CoastalCave_Trainer1PostBattle:
+	.string "I'll keep training and maybe\n"
+	.string "some day I'll be able to go too.$"
+
+CoastalCave_Trainer2Intro:
+	.string "I've been looking for an Onix,\n"
+	.string "but I've had no luck finding one.$"
+
+CoastalCave_Trainer2Defeat:
+	.string "Maybe if I had an Onix I would\n"
+	.string "have won that battle.$"
+
+CoastalCave_Trainer2PostBattle:
+	.string "Let me know if you find an Onix\n"
+	.string "in this cave.$"
+
+CoastalCave_Trainer3Intro:
+	.string "I'm training to fight BRAWLY.\n"
+	.string "You'll be good practice.$"
+
+CoastalCave_Trainer3Defeat:
+	.string "I guess I need more training\n"
+	.string "before I fight BRAWLY.$"
+
+CoastalCave_Trainer3PostBattle:
+	.string "I'll stay here and keep training.\n"
+	.string "You go ahead.$"
+
+CoastalCave_Trainer4Intro:
+	.string "There's some boulders my POKéMON\n"
+	.string "can't move here.$"
+
+CoastalCave_Trainer4Defeat:
+	.string "Maybe if I keep training my POKéMON\n"
+	.string "will be able to push the boulders.$"
+
+CoastalCave_Trainer4PostBattle:
+	.string "Next time you see me those boulders\n"
+	.string "will have been moved.$"
+
+CoastalCave_Trainer5Intro:
+	.string "There's or rock type POKéMON\n"
+	.string "in here.$"
+
+CoastalCave_Trainer5Defeat:
+	.string "I should catch a rock type POKéMON\n"
+	.string "and I will beat you in the future.$"
+
+CoastalCave_Trainer5PostBattle:
+	.string "I'll have the strongest rock type\n"
+	.string "in this cave by tomorrow.$"
+
+DesertExt_Text_Trainer2Intro:
+	.string "Ground type POKéMON are my favorite,\n"
+	.string "that's why I'm here in the desert.$"
+
+DesertExt_Text_Trainer2Defeat:
+	.string "Maybe if I had more ground types…$"
+
+DesertExt_Text_Trainer2PostBattle:
+	.string "If you find any cool ground types,\n"
+	.string "can you let me know?$"
+
+DesertExt_Text_Trainer3Intro:
+	.string "There are some strong POKéMON here.$"
+
+DesertExt_Text_Trainer3Defeat:
+	.string "I need to find stronger POKéMON.$"
+
+DesertExt_Text_Trainer3PostBattle:
+	.string "Maybe all the strong POKéMON are\n"
+	.string "just rare to find…$"
+
+DesertExt_Text_Trainer4Intro:
+	.string "Have you been in the desert cave yet?$"
+
+DesertExt_Text_Trainer4Defeat:
+	.string "I lost? How?$"
+
+DesertExt_Text_Trainer4PostBattle:
+	.string "The cave is just North of here.\n"
+	.string "You should go check it out.$"
+
+DesertExt_Text_Trainer5Intro:
+	.string "Have you been to the cave North\n"
+	.string "of here yet?$"
+
+DesertExt_Text_Trainer5Defeat:
+	.string "I'm going to get more of those\n"
+	.string "cave POKéMON and get even stronger.$"
+
+DesertExt_Text_Trainer5PostBattle:
+	.string "Just you wait. I'll beat you\n"
+	.string "one day.$"
+
+DesertExt_Text_Trainer6Intro:
+	.string "It sounds like there's a dog\n"
+	.string "somewhere further in the cave.$"
+
+DesertExt_Text_Trainer6Defeat:
+	.string "I won't lose like this again.$"
+
+DesertExt_Text_Trainer6PostBattle:
+	.string "Let me know if you find that\n"
+	.string "dog. I hope it's not lost.$"
+
+DesertExt_Text_Trainer7Intro:
+	.string "If you want the item, you'll\n"
+	.string "have to go through me to get it.$"
+
+DesertExt_Text_Trainer7Defeat:
+	.string "I lost? Really?$"
+
+DesertExt_Text_Trainer7PostBattle:
+	.string "I guess you can keep the item.\n"
+	.string "You won, fair and square.$"
+

@@ -2223,7 +2223,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = 20,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WEAK_ARMOR, ABILITY_STAMINA },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Armarouge"),
         .cryId = CRY_ARMAROUGE,
@@ -2284,7 +2284,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = 20,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WEAK_ARMOR, ABILITY_SHARPNESS },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Ceruledge"),
         .cryId = CRY_CERULEDGE,
@@ -4546,7 +4546,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sGreavardLevelUpLearnset,
         .teachableLearnset = sGreavardTeachableLearnset,
         .eggMoveLearnset = sGreavardEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 30, SPECIES_HOUNDSTONE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_HOUNDSTONE}),
     },
 
     [SPECIES_HOUNDSTONE] =

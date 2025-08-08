@@ -1,3 +1,5 @@
+.set LOCALID_RED, 1
+
 EverGrandeCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, EverGrandeCity_OnTransition
 	.byte 0
@@ -34,4 +36,19 @@ EverGrandeCity_Text_CitySign:
 	.string "EVER GRANDE CITY\p"
 	.string "“The paradise of flowers, the sea,\n"
 	.string "and POKéMON.”$"
+
+EverGrandeCity_EventScript_Red::
+	lock
+	faceplayer
+	msgbox EverGrandeCity_Text_Red, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_RED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+EverGrandeCity_Text_Red:
+	.string "You are not yet strong enough to\p"
+	.string "pass. Become Champion, then come\p"
+	.string "find me. I await your challenge.$"
 

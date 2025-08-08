@@ -43,6 +43,8 @@ Route120_OnLoad:
 Route120_EventScript_CloseAncientTomb::
 	setmetatile 7, 54, METATILE_General_RockWall_RockBase, TRUE
 	setmetatile 7, 55, METATILE_General_RockWall_SandBase, TRUE
+	setmetatile 16, 117, METATILE_General_RockWall_RockBase, TRUE
+	setmetatile 16, 118, METATILE_General_RockWall_SandBase, TRUE
 	return
 
 Route120_EventScript_SetBridgeClearMetatiles::
