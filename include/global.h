@@ -1124,6 +1124,7 @@ struct SaveBlock1
     /*0x3???*/ struct WaldaPhrase waldaPhrase;
     // sizeof: 0x3???
 };
+// sizeof: 0x3D88
 
 extern struct SaveBlock1* gSaveBlock1Ptr;
 

@@ -1191,3 +1191,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CoastalCave_WaterRoom/scripts.inc"
 
 	.include "data/maps/DesertCave/scripts.inc"
+    .include "data/scripts/dexnav.inc"
+    

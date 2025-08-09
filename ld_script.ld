@@ -342,6 +342,7 @@ SECTIONS {
         src/ui_startmenu_full.o(.text);
         src/map_preview_screen.o(.text);
         src/ui_stat_editor.o(.text);
+        src/dexnav.o(.text);
     } > ROM =0
 
     script_data :
@@ -707,6 +708,7 @@ SECTIONS {
         src/ui_startmenu_full.o(.rodata);
         src/map_preview_screen.o(.rodata);
         src/ui_stat_editor.o(.rodata);
+        src/dexnav.o(.rodata);
     } > ROM =0
 
     song_data :

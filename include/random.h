@@ -223,5 +223,9 @@ u32 RandomWeightedArrayDefault(enum RandomTag, u32 sum, u32 n, const u8 *weights
 const void *RandomElementArrayDefault(enum RandomTag, const void *array, size_t size, size_t count);
 
 u8 RandomWeightedIndex(u8 *weights, u8 length);
+//Sets the initial seed value of the pseudorandom number generator
+void SeedRng(u16 seed);
+void SeedRng2(u16 seed);
+u16 RandRange(u16 min, u16 max);
 
 #endif // GUARD_RANDOM_H
