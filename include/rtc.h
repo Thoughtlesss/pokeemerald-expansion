@@ -1,7 +1,10 @@
 #ifndef GUARD_RTC_UTIL_H
 #define GUARD_RTC_UTIL_H
 
+#include "global.h"
 #include "siirtc.h"
+#include "config/overworld.h"
+#include "constants/rtc.h"
 
 #define RTC_INIT_ERROR         0x0001
 #define RTC_INIT_WARNING       0x0002
@@ -89,6 +92,7 @@
 #define TIME_NIGHT             3
 
 extern struct Time gLocalTime;
+extern const s32 sNumDaysInMonths[MONTH_COUNT];
 
 void RtcDisableInterrupts(void);
 void RtcRestoreInterrupts(void);
@@ -112,12 +116,19 @@ void FormatHexDate(u8 *dest, s32 year, s32 month, s32 day);
 void RtcCalcTimeDifference(struct SiiRtcInfo *rtc, struct Time *result, struct Time *t);
 void RtcCalcLocalTime(void);
 bool8 IsBetweenHours(s32 hours, s32 begin, s32 end);
-u8 GetTimeOfDay(void);
+enum TimeOfDay GetTimeOfDay(void);
+enum TimeOfDay GetTimeOfDayForDex(void);
 void RtcInitLocalTimeOffset(s32 hour, s32 minute);
 void RtcCalcLocalTimeOffset(s32 days, s32 hours, s32 minutes, s32 seconds);
 void CalcTimeDifference(struct Time *result, struct Time *t1, struct Time *t2);
 u32 RtcGetMinuteCount(void);
 u32 RtcGetLocalDayCount(void);
 void FormatDecimalTimeWithoutSeconds(u8 *dest, s8 hour, s8 minute, bool32 is24Hour);
+u16 GetFullYear(void);
+enum Month GetMonth(void);
+u8 GetDay(void);
+enum Weekday GetDayOfWeek(void);
+enum TimeOfDay TryIncrementTimeOfDay(enum TimeOfDay timeOfDay);
+enum TimeOfDay TryDecrementTimeOfDay(enum TimeOfDay timeOfDay);
 
 #endif // GUARD_RTC_UTIL_H

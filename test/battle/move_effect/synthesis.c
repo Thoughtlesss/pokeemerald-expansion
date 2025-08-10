@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_SYNTHESIS].effect == EFFECT_SYNTHESIS);
+    ASSUME(GetMoveEffect(MOVE_SYNTHESIS) == EFFECT_SYNTHESIS);
 }
 
 SINGLE_BATTLE_TEST("Synthesis recovers 1/2 of the user's max HP")
@@ -44,5 +44,23 @@ SINGLE_BATTLE_TEST("Synthesis recovers 1/4 of the user's max HP in Rain, Sandsto
         TURN { MOVE(opponent, move); MOVE(player, MOVE_SYNTHESIS); }
     } SCENE {
         HP_BAR(player, damage: -(400 / 4));
+    }
+}
+
+SINGLE_BATTLE_TEST("Synthesis recovers regular amount in sandstorm if holding utility umbrella")
+{
+    u32 item;
+    PARAMETRIZE { item = ITEM_LIFE_ORB; }
+    PARAMETRIZE { item = ITEM_UTILITY_UMBRELLA; }
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(400); Item(item); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_SANDSTORM); MOVE(player, MOVE_SYNTHESIS); }
+    } SCENE {
+        if (item != ITEM_UTILITY_UMBRELLA)
+            HP_BAR(player, damage: -(400 / 4));
+        else
+            HP_BAR(player, damage: -(400 / 2));
     }
 }
