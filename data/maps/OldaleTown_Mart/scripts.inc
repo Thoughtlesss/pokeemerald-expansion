@@ -18,9 +18,14 @@ OldaleTown_Mart_Pokemart_Basic:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+<<<<<<< Updated upstream
 	.2byte ITEM_NONE
 	release
 	end
+=======
+	.2byte ITEM_RARE_CANDY
+	pokemartlistend
+>>>>>>> Stashed changes
 
 OldaleTown_Mart_ExpandedItems::
 	pokemart OldaleTown_Mart_Pokemart_Expanded
@@ -35,9 +40,14 @@ OldaleTown_Mart_Pokemart_Expanded:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+<<<<<<< Updated upstream
 	.2byte ITEM_NONE
 	release
 	end
+=======
+	.2byte ITEM_RARE_CANDY
+	pokemartlistend
+>>>>>>> Stashed changes
 
 OldaleTown_Mart_EventScript_Woman::
 	lock

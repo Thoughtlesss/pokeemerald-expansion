@@ -119,6 +119,7 @@ ifneq ($(MODERN),1)
 CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -nostdinc -undef
 endif
 
+<<<<<<< Updated upstream
 LDFLAGS = -Map ../../$(MAP)
 
 SHA1 := $(shell { command -v sha1sum || command -v shasum; } 2>/dev/null) -c
@@ -131,6 +132,26 @@ RAMSCRGEN := tools/ramscrgen/ramscrgen$(EXE)
 FIX := tools/gbafix/gbafix$(EXE)
 MAPJSON := tools/mapjson/mapjson$(EXE)
 JSONPROC := tools/jsonproc/jsonproc$(EXE)
+=======
+# Variable filled out in other make files
+AUTO_GEN_TARGETS :=
+include make_tools.mk
+# Tool executables
+GFX          := $(TOOLS_DIR)/gbagfx/gbagfx$(EXE)
+AIF          := $(TOOLS_DIR)/aif2pcm/aif2pcm$(EXE)
+MID          := $(TOOLS_DIR)/mid2agb/mid2agb$(EXE)
+SCANINC      := $(TOOLS_DIR)/scaninc/scaninc$(EXE)
+PREPROC      := $(TOOLS_DIR)/preproc/preproc$(EXE)
+RAMSCRGEN    := $(TOOLS_DIR)/ramscrgen/ramscrgen$(EXE)
+FIX          := $(TOOLS_DIR)/gbafix/gbafix$(EXE)
+MAPJSON      := $(TOOLS_DIR)/mapjson/mapjson$(EXE)
+JSONPROC     := $(TOOLS_DIR)/jsonproc/jsonproc$(EXE)
+SCRIPT       := $(TOOLS_DIR)/poryscript/poryscript$(EXE)
+TRAINERPROC  := $(TOOLS_DIR)/trainerproc/trainerproc$(EXE)
+PATCHELF     := $(TOOLS_DIR)/patchelf/patchelf$(EXE)
+ROMTEST      ?= $(shell { command -v mgba-rom-test || command -v $(TOOLS_DIR)/mgba/mgba-rom-test$(EXE); } 2>/dev/null)
+ROMTESTHYDRA := $(TOOLS_DIR)/mgba-rom-test-hydra/mgba-rom-test-hydra$(EXE)
+>>>>>>> Stashed changes
 
 PERL := perl
 
@@ -266,11 +287,25 @@ include spritesheet_rules.mk
 include json_data_rules.mk
 include songs.mk
 
+<<<<<<< Updated upstream
 %.s: ;
+=======
+AUTO_GEN_TARGETS += $(patsubst %.pory,%.inc,$(shell find data/ -type f -name '*.pory'))
+
+# NOTE: Tools must have been built prior (FIXME)
+# so you can't really call this rule directly
+generated: $(AUTO_GEN_TARGETS)
+	@: # Silence the "Nothing to be done for `generated'" message, which some people were confusing for an error.
+
+
+%.s:   ;
+>>>>>>> Stashed changes
 %.png: ;
 %.pal: ;
 %.aif: ;
+%.pory: ;
 
+<<<<<<< Updated upstream
 %.1bpp: %.png  ; $(GFX) $< $@
 %.4bpp: %.png  ; $(GFX) $< $@
 %.8bpp: %.png  ; $(GFX) $< $@
@@ -280,6 +315,16 @@ include songs.mk
 %.rl: % ; $(GFX) $< $@
 $(CRY_SUBDIR)/%.bin: $(CRY_SUBDIR)/%.aif ; $(AIF) $< $@ --compress
 sound/%.bin: sound/%.aif ; $(AIF) $< $@
+=======
+%.1bpp:   %.png  ; $(GFX) $< $@
+%.4bpp:   %.png  ; $(GFX) $< $@
+%.8bpp:   %.png  ; $(GFX) $< $@
+%.gbapal: %.pal  ; $(GFX) $< $@
+%.gbapal: %.png  ; $(GFX) $< $@
+%.lz:     %      ; $(GFX) $< $@
+%.rl:     %      ; $(GFX) $< $@
+data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fc tools/poryscript/font_config.json -cc tools/poryscript/command_config.json
+>>>>>>> Stashed changes
 
 
 ifeq ($(MODERN),0)

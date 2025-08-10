@@ -230,9 +230,16 @@ const u8 gText_DepositedVar2Var1s[] = _("Deposited {STR_VAR_2}\n{STR_VAR_1}(s)."
 const u8 gText_NoRoomForItems[] = _("There's no room to\nstore items.");
 const u8 gText_CantStoreImportantItems[] = _("Important items\ncan't be stored in\nthe PC!");
 const u8 gText_TooImportantToToss[] = _("That's much too\nimportant to toss\nout!");
+<<<<<<< Updated upstream
 const u8 gText_TossHowManyVar1s[] = _("Toss out how many\n{STR_VAR_1}(s)?");
 const u8 gText_ThrewAwayVar2Var1s[] = _("Threw away {STR_VAR_2}\n{STR_VAR_1}(s).");
 const u8 gText_ConfirmTossItems[] = _("Is it okay to\nthrow away {STR_VAR_2}\n{STR_VAR_1}(s)?");
+=======
+const u8 gText_TossHowManyVar1s[] = _("Toss out how many\n{STR_VAR_1}?");
+const u8 gText_ThrewAwayVar2Var1s[] = _("Threw away {STR_VAR_2}\n{STR_VAR_1}.");
+const u8 gText_ConfirmTossItems[] = _("Is it okay to\nthrow away {STR_VAR_2}\n{STR_VAR_1}?");
+const u8 gText_PressAnyDpadKey[] = _("Press any {DPAD_NONE} key\nto register item\nin that slot.");
+>>>>>>> Stashed changes
 const u8 gText_DadsAdvice[] = _("DAD's advice…\n{PLAYER}, there's a time and place for\leverything!{PAUSE_UNTIL_PRESS}");
 const u8 gText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
 const u8 gText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
@@ -287,11 +294,23 @@ const u8 gText_KeyItemsPocket[] = _("KEY ITEMS");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
+<<<<<<< Updated upstream
     [ITEMS_POCKET] = gText_ItemsPocket,
     [BALLS_POCKET] = gText_PokeBallsPocket,
     [TMHM_POCKET]  = gText_TMHMPocket,
     [BERRIES_POCKET] = gText_BerriesPocket,
     [KEYITEMS_POCKET] = gText_KeyItemsPocket
+=======
+    [ITEMS_POCKET] =    COMPOUND_STRING("ITEMS"),
+    [MEDICINE_POCKET] = COMPOUND_STRING("MEDICINE"),
+    [BALLS_POCKET] =    COMPOUND_STRING("POKé BALLS"),
+    [MEGASTONES_POCKET] = COMPOUND_STRING("MEGA STONES"),
+    [BERRIES_POCKET] =  COMPOUND_STRING("BERRIES"),
+    [TREASURES_POCKET] = COMPOUND_STRING("TREASURES"),
+    [TMHM_POCKET]  =    COMPOUND_STRING("TMs & HMs"),
+    [KEYITEMS_POCKET] = COMPOUND_STRING("KEY ITEMS")
+    
+>>>>>>> Stashed changes
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}");
@@ -703,6 +722,9 @@ const u8 gText_Key_Items[] = _("KEY ITEMS");
 const u8 gText_Poke_Balls[] = _("POKé BALLS");
 const u8 gText_TMs_Hms[] = _("TMs & HMs");
 const u8 gText_Berries2[] = _("BERRIES");
+const u8 gText_Medicine[] = _("MEDICINE");
+const u8 gText_MegaStones[] = _("MEGA STONES");
+const u8 gText_Treasures[] = _("TREASURES");
 const u8 gText_SomeonesPC[] = _("SOMEONE'S PC");
 const u8 gText_LanettesPC[] = _("LANETTE'S PC");
 const u8 gText_PlayersPC[] = _("{PLAYER}'s PC");
@@ -745,6 +767,14 @@ const u8 gText_FarawayIsland[] = _("FARAWAY ISLAND");
 const u8 gText_NavelRock[] = _("NAVEL ROCK");
 const u8 gText_ClawFossil[] = _("CLAW FOSSIL");
 const u8 gText_RootFossil[] = _("ROOT FOSSIL");
+const u8 gText_DomeFossil[] = _("DOME FOSSIL");
+const u8 gText_HelixFossil[] = _("HELIX FOSSIL");
+const u8 gText_OldAmber[] = _("OLD AMBER");
+const u8 gText_SkullFossil[] = _("SKULL FOSSIL");
+const u8 gText_ArmorFossil[] = _("ARMOR FOSSIL");
+const u8 gText_CoverFossil[] = _("COVER FOSSIL");
+const u8 gText_PlumeFossil[] = _("PLUME FOSSIL");
+const u8 gText_JawFossil[] = _("JAW FOSSIL");
 const u8 gText_No4[] = _("NO");
 const u8 gText_IllBattleNow[] = _("I'll battle now!");
 const u8 gText_IWon[] = _("I won!");
@@ -1819,3 +1849,16 @@ const u8 gText_Answer[] = _("ANSWER");
 const u8 gText_PokeBalls[] = _("POKé BALLS");
 const u8 gText_Berry[] = _("BERRY");
 const u8 gText_Berries[] = _("BERRIES");
+<<<<<<< Updated upstream
+=======
+const u8 gText_StatEditor[] = _("EDIT STATS");
+const u8 gText_ExpShareOn[] = _("The Exp. Share has been turned on.{PAUSE_UNTIL_PRESS}");
+const u8 gText_ExpShareOff[] = _("The Exp. Share has been turned off.{PAUSE_UNTIL_PRESS}");
+const u8 gText_BasePointsResetToZero[] = _("{STR_VAR_1}'s base points\nwere all reset to zero!{PAUSE_UNTIL_PRESS}");
+const u8 gText_Fertilize[] = _("FERTILIZE");
+const u8 gText_PlantBerry[] = _("PLANT BERRY");
+const u8 gText_AM[] = _("AM");
+const u8 gText_PM[] = _("PM");
+const u8 gText_Relearn[] = _("{START_BUTTON} RELEARN"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
+const u8 gText_Rename[] = _("RENAME");
+>>>>>>> Stashed changes

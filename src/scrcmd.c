@@ -49,6 +49,7 @@
 #include "tv.h"
 #include "window.h"
 #include "constants/event_objects.h"
+#include "qol_field_moves.h" // qol_field_moves
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(void);
@@ -1262,6 +1263,13 @@ bool8 ScrCmd_release(struct ScriptContext *ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_setspeaker(struct ScriptContext *ctx)
+{
+    const u8 *name = (const u8 *)ScriptReadWord(ctx);
+    SetSpeakerName(name);
+    return FALSE;
+}
+
 bool8 ScrCmd_message(struct ScriptContext *ctx)
 {
     const u8 *msg = (const u8 *)ScriptReadWord(ctx);
@@ -2305,3 +2313,92 @@ bool8 ScrCmd_warpwhitefade(struct ScriptContext *ctx)
     ResetInitialPlayerAvatarState();
     return TRUE;
 }
+<<<<<<< Updated upstream
+=======
+
+// Start qol_field_moves
+bool8 ScrCmd_checkpartylearnknowsfieldmove(struct ScriptContext *ctx)
+{
+    u16 machine = ScriptReadHalfword(ctx);
+
+    PartyHasMonLearnsKnowsFieldMove(machine);
+
+    return FALSE;
+}
+// End qol_field_moves
+
+void ScriptSetDoubleBattleFlag(struct ScriptContext *ctx)
+{
+    sIsScriptedWildDouble = TRUE;
+}
+
+bool8 ScrCmd_removeallitem(struct ScriptContext *ctx)
+{
+    u32 itemId = VarGet(ScriptReadHalfword(ctx));
+    u32 count = CountTotalItemQuantityInBag(itemId);
+    gSpecialVar_Result = count;
+    RemoveBagItem(itemId, count);
+
+    return FALSE;
+}
+
+bool8 ScrCmd_getobjectxy(struct ScriptContext *ctx)
+{
+    u32 localId = VarGet(ScriptReadHalfword(ctx));
+    u32 useTemplate = VarGet(ScriptReadHalfword(ctx));
+    u16 *pX = GetVarPointer(ScriptReadHalfword(ctx));
+    u16 *pY = GetVarPointer(ScriptReadHalfword(ctx));
+    GetObjectPosition(pX, pY, localId, useTemplate);
+
+    return FALSE;
+}
+
+bool8 ScrCmd_checkobjectat(struct ScriptContext *ctx)
+{
+    u32 x = VarGet(ScriptReadHalfword(ctx)) + 7;
+    u32 y = VarGet(ScriptReadHalfword(ctx)) + 7;
+    u16 *varPointer = GetVarPointer(ScriptReadHalfword(ctx));
+
+    *varPointer = CheckObjectAtXY(x, y);
+
+    return FALSE;
+}
+
+bool8 Scrcmd_getsetpokedexflag(struct ScriptContext *ctx)
+{
+    u32 speciesId = SpeciesToNationalPokedexNum(VarGet(ScriptReadHalfword(ctx)));
+    bool32 desiredFlag = VarGet(ScriptReadHalfword(ctx));
+    gSpecialVar_Result = GetSetPokedexFlag(speciesId, desiredFlag);
+
+    if (desiredFlag == FLAG_SET_CAUGHT)
+        GetSetPokedexFlag(speciesId, FLAG_SET_SEEN);
+
+    return FALSE;
+}
+
+bool8 Scrcmd_checkspecies(struct ScriptContext *ctx)
+{
+    u32 givenSpecies = VarGet(ScriptReadHalfword(ctx));
+    gSpecialVar_Result = CheckPartyHasSpecies(givenSpecies);
+
+    return FALSE;
+}
+
+bool8 Scrcmd_checkspecies_choose(struct ScriptContext *ctx)
+{
+    u32 givenSpecies = VarGet(ScriptReadHalfword(ctx));
+    gSpecialVar_Result = (GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES) == givenSpecies);
+
+    return FALSE;
+}
+
+bool8 Scrcmd_getobjectfacingdirection(struct ScriptContext *ctx)
+{
+    u32 objectId = VarGet(ScriptReadHalfword(ctx));
+    u16 *varPointer = GetVarPointer(ScriptReadHalfword(ctx));
+
+    *varPointer = gObjectEvents[GetObjectEventIdByLocalId(objectId)].facingDirection;
+
+    return FALSE;
+}
+>>>>>>> Stashed changes

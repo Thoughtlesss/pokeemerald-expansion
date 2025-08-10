@@ -1,10 +1,12 @@
 #include "global.h"
+#include "bg.h"
 #include "braille_puzzles.h"
 #include "event_data.h"
 #include "event_scripts.h"
 #include "field_effect.h"
 #include "fldeff.h"
 #include "gpu_regs.h"
+#include "map_preview_screen.h"
 #include "main.h"
 #include "overworld.h"
 #include "palette.h"
@@ -13,8 +15,10 @@
 #include "sound.h"
 #include "sprite.h"
 #include "task.h"
+#include "window.h"
 #include "constants/songs.h"
 #include "constants/map_types.h"
+#include "constants/rgb.h"
 
 struct FlashStruct
 {
@@ -26,7 +30,7 @@ struct FlashStruct
 };
 
 static void FieldCallback_Flash(void);
-static void FldEff_UseFlash(void);
+//static void FldEff_UseFlash(void); // qol_field_moves
 static bool8 TryDoMapTransition(void);
 static void DoExitCaveTransition(void);
 static void Task_ExitCaveTransition1(u8 taskId);
@@ -39,6 +43,8 @@ static void Task_EnterCaveTransition1(u8 taskId);
 static void Task_EnterCaveTransition2(u8 taskId);
 static void Task_EnterCaveTransition3(u8 taskId);
 static void Task_EnterCaveTransition4(u8 taskId);
+static void RunMapPreviewScreen(u8 mapsecId);
+static void Task_MapPreviewScreen_0(u8 taskId);
 
 static const struct FlashStruct sTransitionTypes[] =
 {
@@ -98,7 +104,10 @@ static void FieldCallback_Flash(void)
     gTasks[taskId].data[9] = (uintptr_t)FldEff_UseFlash;
 }
 
-static void FldEff_UseFlash(void)
+// Start qol_field_moves
+//static void FldEff_UseFlash(void)
+void FldEff_UseFlash(void)
+// End qol_field_moves
 {
     PlaySE(SE_M_REFLECT);
     FlagSet(FLAG_SYS_USE_FLASH);
@@ -157,6 +166,11 @@ static bool8 TryDoMapTransition(void)
     u8 fromType = GetLastUsedWarpMapType();
     u8 toType = GetCurrentMapType();
 
+    if (GetLastUsedWarpMapSectionId() != gMapHeader.regionMapSectionId && (MapHasPreviewScreen_HandleQLState2(gMapHeader.regionMapSectionId, MPS_TYPE_CAVE) == TRUE || MapHasPreviewScreen_HandleQLState2(gMapHeader.regionMapSectionId, MPS_TYPE_BASIC) == TRUE))
+    {
+        RunMapPreviewScreen(gMapHeader.regionMapSectionId);
+        return TRUE;
+    }
     for (i = 0; sTransitionTypes[i].fromType; i++)
     {
         if (sTransitionTypes[i].fromType == fromType && sTransitionTypes[i].toType == toType)
@@ -363,3 +377,82 @@ static void Task_EnterCaveTransition4(u8 taskId)
         SetMainCallback2(gMain.savedCallback);
     }
 }
+
+static void RunMapPreviewScreen(u8 mapSecId)
+{
+    u8 taskId = CreateTask(Task_MapPreviewScreen_0, 0);
+    gTasks[taskId].data[3] = mapSecId;
+}
+
+static void Task_MapPreviewScreen_0(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    switch (data[0])
+    {
+    case 0:
+        SetWordTaskArg(taskId, 5, (uintptr_t)gMain.vblankCallback);
+        SetVBlankCallback(NULL);
+        MapPreview_InitBgs();
+        MapPreview_LoadGfx(data[3]);
+        BlendPalettes(PALETTES_ALL, 0x10, RGB_BLACK);
+        data[0]++;
+        break;
+    case 1:
+        if (!MapPreview_IsGfxLoadFinished())
+        {
+            data[4] = MapPreview_CreateMapNameWindow(data[3]);
+            CopyWindowToVram(data[4], COPYWIN_FULL);
+            data[0]++;
+        }
+        break;
+    case 2:
+        if (!IsDma3ManagerBusyWithBgCopy())
+        {
+            BeginNormalPaletteFade(PALETTES_ALL, -1, 16, 0, RGB_BLACK);
+            SetVBlankCallback((IntrCallback)GetWordTaskArg(taskId, 5));
+            data[0]++;
+        }
+        break;
+    case 3:
+        if (!UpdatePaletteFade())
+        {
+            data[2] = MapPreview_GetDuration(data[3]);
+            data[0]++;
+        }
+        break;
+    case 4:
+        data[1]++;
+        if (data[1] > data[2] || JOY_HELD(B_BUTTON))
+        {
+            if (MapHasPreviewScreen_HandleQLState2(gMapHeader.regionMapSectionId, MPS_TYPE_BASIC) == TRUE)
+            {
+                BeginNormalPaletteFade(PALETTES_ALL, MPS_BASIC_FADE_SPEED, 0, 16, RGB_BLACK);
+            }
+            else {
+                BeginNormalPaletteFade(PALETTES_ALL, -2, 0, 16, RGB_WHITE);
+            }
+            data[0]++;
+        }
+        break;
+    case 5:
+        if (!UpdatePaletteFade())
+        {
+            int i;
+            for (i = 0; i < 16; i++)
+            {
+                data[i] = 0;
+            }
+            MapPreview_Unload(data[4]);
+            if (MapHasPreviewScreen_HandleQLState2(gMapHeader.regionMapSectionId, MPS_TYPE_BASIC) == TRUE)
+            {
+                SetMainCallback2(gMain.savedCallback);
+            }
+            else
+            {
+                gTasks[taskId].func = Task_EnterCaveTransition2;
+            }
+        }
+        break;
+    }
+}
+

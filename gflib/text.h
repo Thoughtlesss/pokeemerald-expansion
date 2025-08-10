@@ -20,6 +20,14 @@ enum {
     FONT_NARROW,
     FONT_SMALL_NARROW, // Very similar to FONT_SMALL, some glyphs are narrower
     FONT_BOLD, // JP glyph set only
+<<<<<<< Updated upstream:gflib/text.h
+=======
+    FONT_NARROWER,
+    FONT_SMALL_NARROWER,
+    FONT_SHORT_NARROW,
+    FONT_BW_SUMMARY_SCREEN,
+    FONT_SHORT_NARROWER,
+>>>>>>> Stashed changes:include/text.h
 };
 
 // Return values for font functions

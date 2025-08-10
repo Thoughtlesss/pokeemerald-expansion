@@ -85,8 +85,13 @@ MossdeepCity_StevensHouse_EventScript_LeaveBeldum::
 	end
 
 MossdeepCity_StevensHouse_EventScript_GiveBeldum::
+<<<<<<< Updated upstream
 	setvar VAR_TEMP_1, SPECIES_BELDUM
 	givemon SPECIES_BELDUM, 5
+=======
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BELDUM
+	givemon SPECIES_BELDUM, 5, isShiny = TRUE
+>>>>>>> Stashed changes
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MossdeepCity_StevensHouse_EventScript_SendBeldumParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MossdeepCity_StevensHouse_EventScript_SendBeldumPC
 	goto Common_EventScript_NoMoreRoomForPokemon

@@ -33,5 +33,56 @@ void ItemUseInBattle_EnigmaBerry(u8);
 void Task_UseDigEscapeRopeOnField(u8 taskId);
 u8 CanUseDigOrEscapeRopeOnCurMap(void);
 u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId);
+<<<<<<< Updated upstream
+=======
+
+// Start qol_field_moves
+
+void ItemUseOutOfBattle_CutTool(u8);
+void ItemUseOnFieldCB_CutTool(u8);
+
+void ItemUseOutOfBattle_FlyTool(u8);
+
+void ItemUseOutOfBattle_SurfTool(u8);
+void ItemUseOnFieldCB_SurfTool(u8);
+
+void ItemUseOutOfBattle_StrengthTool(u8);
+void ItemUseOnFieldCB_StrengthTool(u8);
+
+void ItemUseOutOfBattle_FlashTool(u8);
+void ItemUseOnFieldCB_FlashTool(u8 taskId);
+
+void ItemUseOutOfBattle_RockSmashTool(u8);
+
+void ItemUseOutOfBattle_WaterfallTool(u8);
+void ItemUseOnFieldCB_WaterfallTool(u8);
+
+void ItemUseOutOfBattle_DiveTool(u8);
+void ItemUseOnFieldCB_DiveTool(u8);
+
+void ItemUseOutOfBattle_TeleportTool(u8);
+
+void ItemUseOutOfBattle_SweetScentTool(u8);
+void ItemUseOnFieldCB_SweetScentTool(u8);
+
+// End qol_field_moves
+
+void FieldUseFunc_VsSeeker(u8 taskId);
+void Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker(u8 taskId);
+void DisplayDadsAdviceCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField);
+void ItemUseOutOfBattle_PokeFlute(u8 taskId);
+void ItemUseOutOfBattle_TownMap(u8 taskId);
+
+enum {
+    BALL_THROW_UNABLE_TWO_MONS,
+    BALL_THROW_UNABLE_NO_ROOM,
+    BALL_THROW_UNABLE_SEMI_INVULNERABLE,
+    BALL_THROW_ABLE,
+    BALL_THROW_UNABLE_DISABLED_FLAG,
+};
+
+bool32 CanThrowBall(void);
+bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon);
+>>>>>>> Stashed changes
 
 #endif // GUARD_ITEM_USE_H

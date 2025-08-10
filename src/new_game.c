@@ -180,9 +180,15 @@ void NewGameInitData(void)
     gPlayerPartyCount = 0;
     ZeroPlayerPartyMons();
     ResetPokemonStorageSystem();
+<<<<<<< Updated upstream
     ClearRoamerData();
     ClearRoamerLocationData();
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
+=======
+    DeactivateAllRoamers();
+    gSaveBlock1Ptr->registeredItemCompat = ITEM_NONE;
+    memset(gSaveBlock1Ptr->registeredItems, 0, sizeof(gSaveBlock1Ptr->registeredItems));
+>>>>>>> Stashed changes
     ClearBag();
     NewGameInitPCItems();
     ClearPokeblocks();

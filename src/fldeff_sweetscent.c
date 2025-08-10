@@ -47,7 +47,14 @@ bool8 FldEff_SweetScent(void)
     return FALSE;
 }
 
+<<<<<<< Updated upstream
 static void StartSweetScentFieldEffect(void)
+=======
+// Start qol_field_moves
+//static void StartSweetScentFieldEffect(void)
+void StartSweetScentFieldEffect(void)
+// End qol_field_moves
+>>>>>>> Stashed changes
 {
     u8 taskId;
 

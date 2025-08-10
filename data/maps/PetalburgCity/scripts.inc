@@ -3,6 +3,7 @@
 .set LOCALID_WALLYS_DAD, 5
 .set LOCALID_GYM_BOY, 8
 .set LOCALID_SCOTT, 9
+.set LOCALID_BOY2, 10
 
 PetalburgCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
@@ -92,6 +93,16 @@ PetalburgCity_EventScript_Boy::
 	msgbox PetalburgCity_Text_WaterReflection, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_BOY, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+PetalburgCity_EventScript_Boy2::
+	lock
+	faceplayer
+	msgbox PetalburgCity_Text_WaterTypes, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_BOY2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -730,6 +741,12 @@ PetalburgCity_Text_WaterReflection:
 	.string "Or it could be a look of somber silence\n"
 	.string "struggling with fear…\p"
 	.string "What do you see reflected in your face?$"
+
+PetalburgCity_Text_WaterTypes:
+	.string "There are some rare water type\p"
+	.string "Pokemon in the tall grass over \p"
+	.string "there. If only I could get across\p"
+	.string "this water somehow…$"
 
 PetalburgCity_Text_FullPartyExplanation:
 	.string "Let's say you have six POKéMON.\n"

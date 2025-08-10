@@ -602,7 +602,13 @@ static const struct MenuAction MultichoiceList_Fossil[] =
 {
     {gText_ClawFossil},
     {gText_RootFossil},
-    {gText_Exit},
+    {gText_DomeFossil},
+    {gText_PlumeFossil},
+    {gText_OldAmber},
+    {gText_SkullFossil},
+    {gText_ArmorFossil},
+    {gText_CoverFossil},
+    {gText_JawFossil},
 };
 
 static const struct MenuAction MultichoiceList_YesNo[] =
@@ -932,6 +938,9 @@ const u8 *const gStdStrings[] =
     [STDSTRING_BATTLE_ARENA] = gText_BattleArena,
     [STDSTRING_BATTLE_PIKE] = gText_BattlePike,
     [STDSTRING_BATTLE_PYRAMID] = gText_BattlePyramid,
+    [STDSTRING_MEDICINE] = gText_Medicine,
+    [STDSTRING_MEGASTONES] = gText_MegaStones,
+    [STDSTRING_TREASURES] = gText_Treasures,
 };
 
 static const u8 sLinkServicesMultichoiceIds[] =

@@ -28,6 +28,7 @@
 #include "constants/trainers.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
+#include "pokemon.h"
 
 struct BattleWindowText
 {
@@ -378,6 +379,7 @@ static const u8 sText_PkmnIgnoredX[] = _("{B_OPPONENT_MON1_NAME} completely igno
 static const u8 sText_ThrewPokeblockAtPkmn[] = _("{B_PLAYER_NAME} threw a {POKEBLOCK}\nat the {B_OPPONENT_MON1_NAME}!");
 static const u8 sText_OutOfSafariBalls[] = _("{PLAY_SE SE_DING_DONG}ANNOUNCER: You're out of\nSAFARI BALLS! Game over!\p");
 static const u8 sText_OpponentMon1Appeared[] = _("{B_OPPONENT_MON1_NAME} appeared!\p");
+<<<<<<< Updated upstream
 static const u8 sText_WildPkmnAppeared[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!\p");
 static const u8 sText_LegendaryPkmnAppeared[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!\p");
 static const u8 sText_WildPkmnAppearedPause[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!{PAUSE 127}");
@@ -393,6 +395,23 @@ static const u8 sText_LinkTrainerSentOutTwoPkmn[] = _("{B_LINK_OPPONENT1_NAME} s
 static const u8 sText_TwoLinkTrainersSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out {B_LINK_OPPONENT_MON1_NAME}!\n{B_LINK_OPPONENT2_NAME} sent out {B_LINK_OPPONENT_MON2_NAME}!");
 static const u8 sText_LinkTrainerSentOutPkmn2[] = _("{B_LINK_OPPONENT1_NAME} sent out\n{B_BUFF1}!");
 static const u8 sText_LinkTrainerMultiSentOutPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} sent out\n{B_BUFF1}!");
+=======
+static const u8 sText_WildPkmnAppeared[] = _("You encountered a {B_DEF_NATURE_NAME} {B_OPPONENT_MON1_NAME} with {B_DEF_ABILITY_NAME}!\p");
+static const u8 sText_LegendaryPkmnAppeared[] = _("You encountered a {B_DEF_NATURE_NAME} {B_OPPONENT_MON1_NAME} with {B_DEF_ABILITY_NAME}!\p");
+static const u8 sText_WildPkmnAppearedPause[] = _("You encountered a {B_DEF_NATURE_NAME} {B_OPPONENT_MON1_NAME} with {B_DEF_ABILITY_NAME}!{PAUSE 127}");
+static const u8 sText_TwoWildPkmnAppeared[] = _("Oh! A wild {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME} appeared!\p");
+static const u8 sText_Trainer1WantsToBattle[] = _("You are challenged by {B_TRAINER1_NAME_WITH_CLASS}!\p");
+static const u8 sText_LinkTrainerWantsToBattle[] = _("You are challenged by {B_LINK_OPPONENT1_NAME}!");
+static const u8 sText_TwoLinkTrainersWantToBattle[] = _("You are challenged by {B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}!");
+static const u8 sText_Trainer1SentOutPkmn[] = _("{B_TRAINER1_NAME_WITH_CLASS} sent out {B_OPPONENT_MON1_NAME}!");
+static const u8 sText_Trainer1SentOutTwoPkmn[] = _("{B_TRAINER1_NAME_WITH_CLASS} sent out {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
+static const u8 sText_Trainer1SentOutPkmn2[] = _("{B_TRAINER1_NAME_WITH_CLASS} sent out {B_BUFF1}!");
+static const u8 sText_LinkTrainerSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out {B_OPPONENT_MON1_NAME}!");
+static const u8 sText_LinkTrainerSentOutTwoPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
+static const u8 sText_TwoLinkTrainersSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out {B_LINK_OPPONENT_MON1_NAME}! {B_LINK_OPPONENT2_NAME} sent out {B_LINK_OPPONENT_MON2_NAME}!");
+static const u8 sText_LinkTrainerSentOutPkmn2[] = _("{B_LINK_OPPONENT1_NAME} sent out {B_BUFF1}!");
+static const u8 sText_LinkTrainerMultiSentOutPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} sent out {B_BUFF1}!");
+>>>>>>> Stashed changes
 static const u8 sText_GoPkmn[] = _("Go! {B_PLAYER_MON1_NAME}!");
 static const u8 sText_GoTwoPkmn[] = _("Go! {B_PLAYER_MON1_NAME} and\n{B_PLAYER_MON2_NAME}!");
 static const u8 sText_GoPkmn2[] = _("Go! {B_BUFF1}!");
@@ -2312,6 +2331,10 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
     u8 multiplayerId;
     s32 i;
 
+    u32 ability = GetMonAbility(&gEnemyParty[0]);
+    u32 heldItem = GetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, 0);
+    u32 nature = GetNature(&gEnemyParty[0]);
+
     if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK)
         multiplayerId = gRecordedBattleMultiplayerId;
     else
@@ -2716,6 +2739,15 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
             case B_TXT_PARTNER_NAME:
                 GetFrontierTrainerName(text, gPartnerTrainerId);
                 toCpy = text;
+                break;
+            case B_TXT_DEF_NATURE_NAME:
+                toCpy = gNaturesInfo[nature].name;
+                break;
+            case B_TXT_DEF_ITEM_NAME:
+                toCpy = gItemsInfo[heldItem].name;
+                break;
+            case B_TXT_DEF_ABILITY_NAME:
+                toCpy = gAbilitiesInfo[ability].name;
                 break;
             }
 

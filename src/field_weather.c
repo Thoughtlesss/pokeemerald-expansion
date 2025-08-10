@@ -1,4 +1,5 @@
 #include "global.h"
+#include "constants/expansion.h"
 #include "constants/songs.h"
 #include "constants/weather.h"
 #include "constants/rgb.h"
@@ -6,6 +7,7 @@
 #include "event_object_movement.h"
 #include "field_weather.h"
 #include "main.h"
+#include "map_preview_screen.h"
 #include "menu.h"
 #include "palette.h"
 #include "random.h"
@@ -127,7 +129,7 @@ static const u8 sBasePaletteColorMapTypes[32] =
     COLOR_MAP_DARK_CONTRAST,
     COLOR_MAP_DARK_CONTRAST,
     COLOR_MAP_DARK_CONTRAST,
-    COLOR_MAP_DARK_CONTRAST,
+    COLOR_MAP_NONE, // This was changed from COLOR_MAP_DARK_CONTRAST to make sure certain weather effects don't affect map preview colors.
     COLOR_MAP_NONE,
     COLOR_MAP_NONE,
     // sprite palettes
@@ -249,6 +251,13 @@ static void Task_WeatherMain(u8 taskId)
 
 static void None_Init(void)
 {
+<<<<<<< Updated upstream
+=======
+    if (EXPANSION_VERSION_MINOR >= 9 && MapHasPreviewScreen_HandleQLState2(gMapHeader.regionMapSectionId, MPS_TYPE_FADE_IN) == FALSE)
+    {
+        Weather_SetBlendCoeffs(8, 12); // Indoor shadows
+    }
+>>>>>>> Stashed changes
     gWeatherPtr->targetColorMapIndex = 0;
     gWeatherPtr->colorMapStepDelay = 0;
 }

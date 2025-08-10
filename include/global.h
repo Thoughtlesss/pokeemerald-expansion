@@ -981,19 +981,29 @@ struct SaveBlock1
     /*0x238*/ struct Pokemon playerParty[PARTY_SIZE];
     /*0x490*/ u32 money;
     /*0x494*/ u16 coins;
-    /*0x496*/ u16 registeredItem; // registered for use with SELECT button
+    /*0x496*/ u16 registeredItemCompat; // used for vanilla registered item
     /*0x498*/ struct ItemSlot pcItems[PC_ITEMS_COUNT];
     /*0x560*/ struct ItemSlot bagPocket_Items[BAG_ITEMS_COUNT];
     /*0x5D8*/ struct ItemSlot bagPocket_KeyItems[BAG_KEYITEMS_COUNT];
     /*0x650*/ struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
     /*0x690*/ struct ItemSlot bagPocket_TMHM[BAG_TMHM_COUNT];
     /*0x790*/ struct ItemSlot bagPocket_Berries[BAG_BERRIES_COUNT];
+              struct ItemSlot bagPocket_Medicine[BAG_MEDICINE_COUNT];
+              struct ItemSlot bagPocket_Mega_Stones[BAG_MEGASTONES_COUNT];
+              struct ItemSlot bagPocket_Treasures[BAG_TREASURES_COUNT];
     /*0x848*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
     /*0x988*/ u8 seen1[NUM_DEX_FLAG_BYTES];
     /*0x9BC*/ u16 berryBlenderRecords[3];
     /*0x9C2*/ u8 unused_9C2[6];
     /*0x9C8*/ u16 trainerRematchStepCounter;
+    // MAX_REMATCH_ENTRIES decreased from vanilla's 100 to 92
+    // This is to accomodate 4 non-vanilla registeredItems
     /*0x9CA*/ u8 trainerRematches[MAX_REMATCH_ENTRIES];
+<<<<<<< Updated upstream
+=======
+    /*0xA26*/ u16 registeredItems[MAX_REGISTERED_ITEMS];
+#endif //FREE_MATCH_CALL
+>>>>>>> Stashed changes
     /*0xA2E*/ //u8 padding3[2];
     /*0xA30*/ struct ObjectEvent objectEvents[OBJECT_EVENTS_COUNT];
     /*0xC70*/ struct ObjectEventTemplate objectEventTemplates[OBJECT_EVENT_TEMPLATES_COUNT];

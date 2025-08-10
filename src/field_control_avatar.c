@@ -16,6 +16,7 @@
 #include "fldeff_misc.h"
 #include "item_menu.h"
 #include "link.h"
+#include "map_preview_screen.h"
 #include "match_call.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
@@ -34,6 +35,7 @@
 #include "constants/map_types.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
+#include "qol_field_moves.h"
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
@@ -131,6 +133,8 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
         input->dpadDirection = DIR_EAST;
 }
 
+#include "heat_start_menu.h"
+
 int ProcessPlayerFieldInput(struct FieldInput *input)
 {
     struct MapPosition position;
@@ -179,10 +183,10 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     }
     if (input->pressedAButton && TrySetupDiveDownScript() == TRUE)
         return TRUE;
-    if (input->pressedStartButton)
+    if (input->pressedStartButton && !ForestMapPreviewScreenIsRunning()) // Prevents opening the Start menu while the map preview is still fading out.
     {
         PlaySE(SE_WIN_OPEN);
-        ShowStartMenu();
+        HeatStartMenu_Init();
         return TRUE;
     }
     if (input->pressedSelectButton && UseRegisteredKeyItemOnField() == TRUE)
@@ -447,12 +451,18 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
 
 static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metatileBehavior, u8 direction)
 {
-    if (FlagGet(FLAG_BADGE05_GET) == TRUE && PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE)
+    // Start qol_field_moves
+    if (CanUseSurfFromInteractedWater())
+    //if (FlagGet(FLAG_BADGE05_GET) == TRUE && PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE)
+    // End qol_field_moves
         return EventScript_UseSurf;
 
     if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE)
     {
-        if (FlagGet(FLAG_BADGE08_GET) == TRUE && IsPlayerSurfingNorth() == TRUE)
+        // Start qol_field_moves
+        //if (FlagGet(FLAG_BADGE08_GET) == TRUE && IsPlayerSurfingNorth() == TRUE)
+        if (CanUseWaterfallFromInteractedWater())
+        // End qol_field_moves
             return EventScript_UseWaterfall;
         else
             return EventScript_CannotUseWaterfall;
@@ -462,7 +472,8 @@ static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metati
 
 static bool32 TrySetupDiveDownScript(void)
 {
-    if (FlagGet(FLAG_BADGE07_GET) && TrySetDiveWarp() == 2)
+    //if (FlagGet(FLAG_BADGE07_GET) && TrySetDiveWarp() == 2) // qol_field_moves
+    if (CanUseDiveDown()) // qol_field_moves
     {
         ScriptContext_SetupScript(EventScript_UseDive);
         return TRUE;
@@ -472,7 +483,8 @@ static bool32 TrySetupDiveDownScript(void)
 
 static bool32 TrySetupDiveEmergeScript(void)
 {
-    if (FlagGet(FLAG_BADGE07_GET) && gMapHeader.mapType == MAP_TYPE_UNDERWATER && TrySetDiveWarp() == 1)
+    //if (FlagGet(FLAG_BADGE07_GET) && gMapHeader.mapType == MAP_TYPE_UNDERWATER && TrySetDiveWarp() == 1) // qol_field_moves
+    if (CanUseDiveEmerge())
     {
         ScriptContext_SetupScript(EventScript_UseDiveUnderwater);
         return TRUE;

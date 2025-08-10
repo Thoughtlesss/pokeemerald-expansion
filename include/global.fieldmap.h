@@ -292,6 +292,17 @@ enum
     COLLISION_ISOLATED_HORIZONTAL_RAIL,
     COLLISION_VERTICAL_RAIL,
     COLLISION_HORIZONTAL_RAIL,
+<<<<<<< Updated upstream
+=======
+    //Start qol_field_moves
+    COLLISION_START_SURFING,
+    COLLISION_START_CUT,
+    COLLISION_START_ROCK_SMASH,
+    //End qol_field_moves
+    COLLISION_STAIR_WARP,
+    COLLISION_SIDEWAYS_STAIRS_TO_RIGHT,
+    COLLISION_SIDEWAYS_STAIRS_TO_LEFT
+>>>>>>> Stashed changes
 };
 
 // player running states

@@ -74,6 +74,15 @@ void SetBagItemsPointers(void)
 
     gBagPockets[BERRIES_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_Berries;
     gBagPockets[BERRIES_POCKET].capacity = BAG_BERRIES_COUNT;
+
+    gBagPockets[MEDICINE_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_Medicine;
+    gBagPockets[MEDICINE_POCKET].capacity = BAG_MEDICINE_COUNT;
+
+    gBagPockets[MEGASTONES_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_Mega_Stones;
+    gBagPockets[MEGASTONES_POCKET].capacity = BAG_MEGASTONES_COUNT;
+
+    gBagPockets[TREASURES_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_Treasures;
+    gBagPockets[TREASURES_POCKET].capacity = BAG_TREASURES_COUNT;
 }
 
 void CopyItemName(u16 itemId, u8 *dst)
@@ -571,14 +580,13 @@ void CompactPCItems(void)
 
 void SwapRegisteredBike(void)
 {
-    switch (gSaveBlock1Ptr->registeredItem)
-    {
-    case ITEM_MACH_BIKE:
-        gSaveBlock1Ptr->registeredItem = ITEM_ACRO_BIKE;
-        break;
-    case ITEM_ACRO_BIKE:
-        gSaveBlock1Ptr->registeredItem = ITEM_MACH_BIKE;
-        break;
+    s32 index;
+    if ((index = RegisteredItemIndex(ITEM_ACRO_BIKE)) >= 0) {
+        gSaveBlock1Ptr->registeredItems[index] = ITEM_MACH_BIKE;
+        gSaveBlock1Ptr->registeredItemCompat = ITEM_MACH_BIKE;
+    } else if ((index = RegisteredItemIndex(ITEM_MACH_BIKE)) >= 0) {
+        gSaveBlock1Ptr->registeredItems[index] = ITEM_ACRO_BIKE;
+        gSaveBlock1Ptr->registeredItemCompat = ITEM_ACRO_BIKE;
     }
 }
 

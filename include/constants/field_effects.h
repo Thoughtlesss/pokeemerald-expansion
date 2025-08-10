@@ -68,6 +68,21 @@
 #define FLDEFF_RAYQUAZA_SPOTLIGHT        64
 #define FLDEFF_DESTROY_DEOXYS_ROCK       65
 #define FLDEFF_MOVE_DEOXYS_ROCK          66
+<<<<<<< Updated upstream
+=======
+// Start qol_field_moves
+#define FLDEFF_USE_SURF_TOOL             73
+#define FLDEFF_USE_WATERFALL_TOOL        74
+#define FLDEFF_USE_DIVE_TOOL             75
+#define FLDEFF_USE_TELEPORT_TOOL         76
+// End qol_field_moves
+#define FLDEFF_USE_VS_SEEKER             67
+#define FLDEFF_X_ICON                    68
+#define FLDEFF_DOUBLE_EXCL_MARK_ICON     69
+#define FLDEFF_TRACKS_SLITHER            70
+#define FLDEFF_TRACKS_SPOT               71
+#define FLDEFF_TRACKS_BUG                72
+>>>>>>> Stashed changes
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

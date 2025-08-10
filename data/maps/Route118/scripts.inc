@@ -95,7 +95,13 @@ Route118_EventScript_StevenTrigger::
 	waitmovement 0
 	delay 30
 	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
-	closemessage
+	msgbox MegaEvolveText0, MSGBOX_DEFAULT
+	msgbox MegaEvolveText1, MSGBOX_DEFAULT
+	msgbox MegaRing_Give_Text, MSGBOX_DEFAULT
+	goto MegaRingGive
+	end
+
+Route118_EventScript_StevenExit::
 	call_if_eq VAR_0x8008, 0, Route118_EventScript_StevenExit0
 	call_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1
 	call_if_eq VAR_0x8008, 2, Route118_EventScript_StevenExit2
@@ -176,6 +182,12 @@ Route118_Movement_StevenExit2:
 	walk_right
 	walk_right
 	step_end
+
+MegaRingGive::
+	giveitem ITEM_MEGA_RING
+	playfanfare MUS_OBTAIN_ITEM
+	goto Route118_EventScript_StevenExit
+	end
 
 Route118_EventScript_Rose::
 	trainerbattle_single TRAINER_ROSE_1, Route118_Text_RoseIntro, Route118_Text_RoseDefeat, Route118_EventScript_RegisterRose
@@ -258,9 +270,47 @@ Route118_Text_StevenQuestions:
 	.string "all sorts of POKéMON.\p"
 	.string "As a TRAINER of POKéMON,\n"
 	.string "what do you think?\p"
-	.string "Of course, it's not any of my business.\p"
-	.string "It would be nice if we were to meet\n"
-	.string "again somewhere.$"
+	.string "You know, seeing you again reminded\n"
+	.string "me of a question I wanted to ask.\p"
+	.string "Have you heard of phenomenon called\n"
+	.string "Mega Evolution before?$"
+
+EmptyText: 
+	.string "                                   \n"
+	.string "                                   \p"
+
+MegaEvolveText:
+	.string "You know, seeing you again reminded\n"
+	.string "me of a question I wanted to ask.\p"
+	.string "Have you heard of phenomenon called\n"
+	.string "Mega Evolution before?$"
+
+MegaEvolveText0:
+	.string "We still don't know much about the\n"
+	.string "phenomenon, but from what I can tell\p"
+	.string "with the combined power of a\n"
+	.string "Mega Ring and a POKéMON holding a\p"
+	.string "Mega Stone, certain POKéMON can\n"
+	.string "Mega Evolve.$"
+
+MegaEvolveText1:
+	.string "It seems to only last the duration\n"
+	.string "of the battle, but the POKéMON will\p"
+	.string "get significantly stronger, and can\n"
+	.string "even gain new abilities. The drawback\p"
+	.string "is that it can only be done once per\n"
+	.string "battle and the POKéMON must hold\p"
+	.string "their corresponding Mega Stone.$"
+
+MegaRing_Give_Text:
+	.string "Mega Stones seem to be scattered all\n"
+	.string "around the Hoenn region. I'm sure you\p"
+	.string "will come across lots of different\n"
+	.string "Mega Stones during your adventure.\p"
+	.string "I believe a trainer like you could\n"
+	.string "put this power to great use.\p"
+	.string "That's why I'm entrusting you\n"
+	.string "with a Mega Ring.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"

@@ -854,7 +854,7 @@ gText_SandstormIsVicious::
 	.string "It's impossible to keep going.$"
 
 gText_SelectWithoutRegisteredItem::
-	.string "An item in the BAG can be\n"
+	.string "Up to four items in the BAG can be\n"
 	.string "registered to SELECT for easy use.$"
 
 gText_PokemonTrainerSchoolEmail::
@@ -1055,3 +1055,42 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+	.include "data/scripts/qol_field_move_scripts.inc" @ qol_field_moves
+
+	.include "data/maps/TimewarpCave/scripts.inc"
+
+	.include "data/maps/DewfordBeach/scripts.inc"
+
+	.include "data/maps/DewfordTown_House3/scripts.inc"
+
+	.include "data/maps/DewfordTown_House4/scripts.inc"
+
+	.include "data/maps/NorthSlateportRiver/scripts.inc"
+
+	.include "data/maps/SouthSlateportRiver/scripts.inc"
+
+	.include "data/maps/MauvilleRiver/scripts.inc"
+
+	.include "data/maps/LostleafBush/scripts.inc"
+
+	.include "data/maps/FrostbiteCave_1F/scripts.inc"
+
+	.include "data/maps/FrostbiteCave_B1F/scripts.inc"
+
+	.include "data/maps/DesertExtension/scripts.inc"
+
+	.include "data/maps/NorthFallarbor/scripts.inc"
+
+	.include "data/maps/SkullFossilCave/scripts.inc"
+
+	.include "data/maps/ShieldFossilCave/scripts.inc"
+
+	.include "data/maps/CoastalCave_1F/scripts.inc"
+
+	.include "data/maps/MeteorFalls_OldAmber_Room/scripts.inc"
+
+	.include "data/maps/CoastalCave_B1F/scripts.inc"
+
+	.include "data/maps/CoastalCave_WaterRoom/scripts.inc"
+
+	.include "data/maps/DesertCave/scripts.inc"

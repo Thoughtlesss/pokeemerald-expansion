@@ -57,6 +57,31 @@
 #define B_TXT_PARTNER_CLASS 0x32
 #define B_TXT_PARTNER_NAME 0x33
 #define B_TXT_BUFF3 0x34
+<<<<<<< Updated upstream
+=======
+#define B_TXT_ATK_TRAINER_NAME 0x35
+#define B_TXT_ATK_TRAINER_CLASS 0x36
+#define B_TXT_ATK_TEAM1 0x37 // Your/The opposing
+#define B_TXT_ATK_TEAM2 0x38 // your/the opposing
+#define B_TXT_DEF_NAME 0x39
+#define B_TXT_DEF_TEAM1 0x3A // Your/The opposing
+#define B_TXT_DEF_TEAM2 0x3B // your/the opposing
+// #define B_TXT_SELECTION_NAME 0x3C - removed
+// #define B_TXT_SELECTION_NAME2 0x3D no Illusion check - removed
+#define B_TXT_ATK_NAME_WITH_PREFIX2 0x3E //lowercase
+#define B_TXT_DEF_NAME_WITH_PREFIX2 0x3F //lowercase
+#define B_TXT_EFF_NAME_WITH_PREFIX2 0x40 //lowercase
+#define B_TXT_SCR_ACTIVE_NAME_WITH_PREFIX2 0x41 //lowercase
+#define B_TXT_TRAINER1_NAME_WITH_CLASS 0x42
+#define B_TXT_TRAINER2_NAME_WITH_CLASS 0x43
+#define B_TXT_PARTNER_NAME_WITH_CLASS 0x44
+#define B_TXT_ATK_TRAINER_NAME_WITH_CLASS 0x45
+#define B_TXT_EFF_TEAM1 0x46
+#define B_TXT_EFF_TEAM2 0x47
+#define B_TXT_DEF_NATURE_NAME 0x48
+#define B_TXT_DEF_ITEM_NAME 0x49
+#define B_TXT_DEF_ABILITY_NAME 0x4A
+>>>>>>> Stashed changes
 
 // for B_TXT_BUFF1, B_TXT_BUFF2 and B_TXT_BUFF3
 

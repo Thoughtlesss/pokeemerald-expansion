@@ -433,6 +433,30 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_DEWFORD_BEACH",
+      "name": "DEWFORD BEACH",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_SLATEPORT_RIVER",
+      "name": "SOUTH SLATEPORT RIVER",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_NORTH_SLATEPORT_RIVER",
+      "name": "NORTH SLATEPORT RIVER",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
       "map_section": "MAPSEC_UNDERWATER_SOOTOPOLIS",
       "name": "UNDERWATER",
       "x": 21,
