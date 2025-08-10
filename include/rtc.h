@@ -32,17 +32,17 @@
     #define NIGHT_HOUR_END     12
 //Evening doesn't exist in Gen 4
 #elif OW_TIMES_OF_DAY == GEN_4
-    #define MORNING_HOUR_BEGIN 4
-    #define MORNING_HOUR_END   10
+    #define MORNING_HOUR_BEGIN 5
+    #define MORNING_HOUR_END   11
 
-    #define DAY_HOUR_BEGIN     10
+    #define DAY_HOUR_BEGIN     11
     #define DAY_HOUR_END       20
 
     #define EVENING_HOUR_BEGIN 0
     #define EVENING_HOUR_END   0
 
     #define NIGHT_HOUR_BEGIN   20
-    #define NIGHT_HOUR_END     4
+    #define NIGHT_HOUR_END     5
 //Gen 5 currently not included as the seasons change the times of day
 #elif OW_TIMES_OF_DAY <= GEN_6
     #define MORNING_HOUR_BEGIN 4
@@ -74,9 +74,9 @@
     #define MORNING_HOUR_END   10
 
     #define DAY_HOUR_BEGIN     10
-    #define DAY_HOUR_END       19
+    #define DAY_HOUR_END       17
 
-    #define EVENING_HOUR_BEGIN 19
+    #define EVENING_HOUR_BEGIN 17
     #define EVENING_HOUR_END   20
 
     #define NIGHT_HOUR_BEGIN   20

@@ -206,7 +206,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -215,6 +217,14 @@
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route124_EventScript_HuntersHouseSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 57,
+      "y": 43,
+      "elevation": 0,
+      "item": "ITEM_DAMP_ROCK",
+      "flag": "FLAG_HIDDEN_ITEM_DAMP_ROCK"
     }
   ]
 }

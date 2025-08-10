@@ -8978,7 +8978,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_RIVALRY, ABILITY_MOLD_BREAKER, ABILITY_UNNERVE },
+        .abilities = { ABILITY_RIVALRY, ABILITY_MOLD_BREAKER, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Axew"),
         .cryId = CRY_AXEW,
@@ -9041,7 +9041,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_RIVALRY, ABILITY_MOLD_BREAKER, ABILITY_UNNERVE },
+        .abilities = { ABILITY_RIVALRY, ABILITY_MOLD_BREAKER, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Fraxure"),
         .cryId = CRY_FRAXURE,
@@ -9145,7 +9145,67 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sHaxorusLevelUpLearnset,
         .teachableLearnset = sHaxorusTeachableLearnset,
+        .formSpeciesIdTable = sHaxorusFormSpeciesIdTable,
+        .formChangeTable = sHaxorusFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_HAXORUS_MEGA] =
+    {
+        .baseHP        = 96,
+        .baseAttack    = 167,
+        .baseDefense   = 110,
+        .baseSpeed     = 117,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_DRAGON),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 270 : 243,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 40,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_RIVALRY, ABILITY_RIVALRY, ABILITY_RIVALRY },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Haxorus"),
+        .cryId = CRY_HAXORUS,
+        .natDexNum = NATIONAL_DEX_HAXORUS,
+        .categoryName = _("Axe Jaw"),
+        .height = 18,
+        .weight = 1055,
+        .description = COMPOUND_STRING(
+            "They are kind but can be relentless\n"
+            "when defending territory. Their sturdy\n"
+            "tusks will stay sharp even if used to cut\n"
+            "steel beams."),
+        .pokemonScale = 267,
+        .pokemonOffset = 2,
+        .trainerScale = 286,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_HaxorusMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Haxorus,
+        //.frontAnimId = ANIM_H_SHAKE,
+        .backPic = gMonBackPic_HaxorusMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_HaxorusMega,
+        .shinyPalette = gMonShinyPalette_HaxorusMega,
+        .iconSprite = gMonIcon_Haxorus,
+        .iconPalIndex = 2,
+        SHADOW(2, 9, SHADOW_SIZE_L)
+        FOOTPRINT(Haxorus)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sHaxorusLevelUpLearnset,
+        .teachableLearnset = sHaxorusTeachableLearnset,
+        .formSpeciesIdTable = sHaxorusFormSpeciesIdTable,
+        .formChangeTable = sHaxorusFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_AXEW
 
 #if P_FAMILY_CUBCHOO
@@ -11813,6 +11873,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sKyuremWhiteLevelUpLearnset,
         .teachableLearnset = sKyuremTeachableLearnset,
         .formSpeciesIdTable = sKyuremFormSpeciesIdTable,
+        .formChangeTable = sKyuremWhiteFormChangeTable,
     },
 
     [SPECIES_KYUREM_BLACK] =
@@ -11886,7 +11947,124 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sKyuremBlackLevelUpLearnset,
         .teachableLearnset = sKyuremTeachableLearnset,
         .formSpeciesIdTable = sKyuremFormSpeciesIdTable,
+        .formChangeTable = sKyuremBlackFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_KYUREM_B_MEGA] =
+    {
+        .baseHP        = 135,
+        .baseAttack    = 175,
+        .baseDefense   = 105,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 175,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FIRE),
+        .catchRate = 3,
+        .expYield = 350,
+        .evYield_Attack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_DRAGONS_MAW, ABILITY_DRAGONS_MAW, ABILITY_DRAGONS_MAW },
+        .bodyColor = BODY_COLOR_GRAY,
+        .noFlip = TRUE,
+        .speciesName = _("Kyurem"),
+        .cryId = CRY_KYUREM_BLACK,
+        .natDexNum = NATIONAL_DEX_KYUREM,
+        .categoryName = _("Boundary"),
+        .height = 33,
+        .weight = 3250,
+        .description = COMPOUND_STRING(
+            "Kyurem has absorbed the power of both\n"
+            "Zekrom and Reshiram. It has ascended\n"
+            "into the original dragon, however it \n"
+            "can not remain in this form for long."),
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 356,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_KyuremMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Kyurem,
+        //.frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_KyuremMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_KyuremMega,
+        .shinyPalette = gMonShinyPalette_KyuremMega,
+        .iconSprite = gMonIcon_KyuremBlack,
+        .iconPalIndex = 0,
+        SHADOW(4, 14, SHADOW_SIZE_L)
+        FOOTPRINT(Kyurem)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sKyuremBlackLevelUpLearnset,
+        .teachableLearnset = sKyuremTeachableLearnset,
+        .formSpeciesIdTable = sKyuremFormSpeciesIdTable,
+        .formChangeTable = sKyuremBlackFormChangeTable,
+    },
+
+    [SPECIES_KYUREM_W_MEGA] =
+    {
+        .baseHP        = 135,
+        .baseAttack    = 175,
+        .baseDefense   = 105,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 175,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ELECTRIC),
+        .catchRate = 3,
+        .expYield = 350,
+        .evYield_Attack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_DRAGONS_MAW, ABILITY_DRAGONS_MAW, ABILITY_DRAGONS_MAW },
+        .bodyColor = BODY_COLOR_GRAY,
+        .noFlip = TRUE,
+        .speciesName = _("Kyurem"),
+        .cryId = CRY_KYUREM_WHITE,
+        .natDexNum = NATIONAL_DEX_KYUREM,
+        .categoryName = _("Boundary"),
+        .height = 33,
+        .weight = 3250,
+        .description = COMPOUND_STRING(
+            "Kyurem has absorbed the power of both\n"
+            "Reshiram and Zekrom. It has ascended\n"
+            "into the original dragon, however it \n"
+            "can not remain in this form for long."),
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 356,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_KyuremMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Kyurem,
+        //.frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_KyuremMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        //.backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_KyuremMega,
+        .shinyPalette = gMonShinyPalette_KyuremMega,
+        .iconSprite = gMonIcon_KyuremWhite,
+        .iconPalIndex = 0,
+        SHADOW(4, 14, SHADOW_SIZE_L)
+        FOOTPRINT(Kyurem)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sKyuremWhiteLevelUpLearnset,
+        .teachableLearnset = sKyuremTeachableLearnset,
+        .formSpeciesIdTable = sKyuremFormSpeciesIdTable,
+        .formChangeTable = sKyuremWhiteFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FUSION_FORMS
 #endif //P_FAMILY_KYUREM
 

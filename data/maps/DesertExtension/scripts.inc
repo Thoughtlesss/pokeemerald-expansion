@@ -1,0 +1,28 @@
+DesertExtension_MapScripts::
+	.byte 0
+
+Desert_Ext_EventScript_Trainer1::
+	trainerbattle_single TRAINER_RICKEM, DesertExt_Text_Trainer1Intro, DesertExt_Text_Trainer1Defeat
+	msgbox DesertExt_Text_Trainer1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Desert_Ext_EventScript_Trainer2::
+	trainerbattle_single TRAINER_DESERTEXT2, DesertExt_Text_Trainer2Intro, DesertExt_Text_Trainer2Defeat
+	msgbox DesertExt_Text_Trainer2PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Desert_Ext_EventScript_Trainer3::
+	trainerbattle_single TRAINER_DESERTEXT3, DesertExt_Text_Trainer3Intro, DesertExt_Text_Trainer3Defeat
+	msgbox DesertExt_Text_Trainer3PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Desert_Ext_EventScript_Trainer4::
+	trainerbattle_single TRAINER_DESERTEXT4, DesertExt_Text_Trainer4Intro, DesertExt_Text_Trainer4Defeat
+	msgbox DesertExt_Text_Trainer4PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Desert_Ext_EventScript_Trainer5::
+	trainerbattle_single TRAINER_DESERTEXT5, DesertExt_Text_Trainer5Intro, DesertExt_Text_Trainer5Defeat
+	msgbox DesertExt_Text_Trainer5PostBattle, MSGBOX_AUTOCLOSE
+	end
+

@@ -27,6 +27,11 @@
       "map": "MAP_ROUTE103",
       "offset": 60,
       "direction": "left"
+    },
+    {
+      "map": "MAP_NORTH_SLATEPORT_RIVER",
+      "offset": 82,
+      "direction": "left"
     }
   ],
   "object_events": [
