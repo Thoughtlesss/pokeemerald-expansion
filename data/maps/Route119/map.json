@@ -22,6 +22,16 @@
       "map": "MAP_FORTREE_CITY",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_MAUVILLE_RIVER",
+      "offset": 100,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_DESERT_EXTENSION",
+      "offset": 0,
+      "direction": "left"
     }
   ],
   "object_events": [

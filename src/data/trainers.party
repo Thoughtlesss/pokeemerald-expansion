@@ -599,6 +599,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Mightyena
+Ability: Moxie
 Level: 41
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -606,9 +607,22 @@ Crobat
 Level: 41
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Sharpedo
+Crawdaunt 
+Ability: Adaptability
 Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Aqua Jet
+- Crabhammer
+- Crunch
+- Protect
+
+Sharpedo @ Sharpedonite
+Level: 45
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Ice Fang
+- Crunch
+- Liquidation
+- Poison Fang
 
 === TRAINER_LEAH ===
 Name: LEAH
@@ -4592,48 +4606,73 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer / Force Setup First Turn
+AI: Smart Trainer
 Mugshot: Purple
 
-Mightyena
+Houndoom @ Wise Glasses
+Ability: Intimidate
 Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+Nature: Timid
+- Flamethrower
+- Dark Pulse
+- Sludge Bomb
+- Shadow Ball
 
-Shiftry
+Umbreon @ Leftovers
+Ability: Synchronize
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
+EVs: 144 HP / 0 Atk / 252 Def / 0 SpA / 114 SpD / 0 Spe
+Nature: Impish
+Shiny: Yes
+- Toxic
+- Moonlight
+- Protect
+- Foul Play
 
-Cacturne
+Bisharp @ Black Glasses
+Ability: Defiant
 Level: 46
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
+EVs: 0 HP / 252 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant
+- Iron Head
+- Night Slash
+- Psycho Cut
+- Brick Break
 
-Crawdaunt
+Honchkrow @ Scope Lens
+Ability: Super Luck
+Level: 46
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant
+- Night Slash
+- Brave Bird
+- Roost
+- U-Turn
+
+Crawdaunt @ Mystic Water
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
+EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant
+- Crabhammer
 - Swords Dance
-- Strength
-- Facade
+- Crunch
+- Aqua Jet
 
-Absol @ Sitrus Berry
+Absol @ Absolite
 Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+Nature: Jolly
 - Aerial Ace
-- Rock Slide
+- Psycho Cut
+- Night Slash
 - Swords Dance
-- Slash
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
@@ -4643,48 +4682,71 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 Mugshot: Green
 
-Dusclops
+Zoroark_Hisui @ Colbur Berry
+Ability: Illusion
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
-
-Sableye
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+Nature: Timid
 - Shadow Ball
 - Psychic
-- Thunderbolt
-- Facade
+- Hyper Voice
+- Foul Play
 
-Dusclops @ Sitrus Berry
+Mimikyu @ Focus Sash
+Level: 49
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+Nature: Jolly
+- Swords Dance
+- Shadow Claw
+- Play Rough
+- Shadow Sneak
+
+Sableye @ Leftovers
+Ability: Prankster
+Level: 50
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 0 HP / 0 Atk / 252 Def / 0 SpA / 252 SpD / 0 Spe
+Nature: Impish
+- Will O Wisp
+- Protect
+- Recover
+- Foul Play
+
+Annihilape @ Muscle Band
+Ability: Iron Fist
+Level: 49
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 0 HP / 252 Atk / 144 Def / 0 SpA / 114 SpD / 0 Spe
+Nature: Careful
+- Rage Fist
+- Drain Punch
+- Assurance
+- Ice Punch
+
+Dusclops @ Eviolite
+Level: 49
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 0 HP / 0 Atk / 252 Def / 0 SpA / 252 SpD / 0 Spe
+Nature: Careful
+- Protect
+- Night Shade
+- Will O Wisp
+- Haze
+
+Gengar @ Gengarite
 Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+Nature: Timid
 - Shadow Ball
-- Ice Beam
-- Rock Slide
-- Earthquake
+- Psychic
+- Sludge Bomb
+- Dazzling Gleam
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -4694,48 +4756,73 @@ Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 Mugshot: Pink
 
-Sealeo
+Ninetales_Alola @ Icy Rock
+Ability: Snow Warning
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
-
-Glalie
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
+EVs: 0 HP / 0 Atk / 0 Def / 144 SpA / 114 SpD / 252 Spe
+Nature: Calm
 - Ice Beam
+- Dazzling Gleam
+- Draining Kiss
+- Psyshock
 
-Sealeo
-Level: 52
+Glaceon @ Leftovers
+Ability: Ice Body
+Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
+EVs: 0 HP / 0 Atk / 114 Def / 252 SpA / 144 SpD / 0 Spe
+Nature: Modest
+- Freeze Dry
+- Alluring Voice
 - Blizzard
+- Chilling Water
 
-Glalie
+Froslass @ Wise Glasses
+Ability: Cursed Body
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+Nature: Timid
 - Ice Beam
+- Shadow Ball
+- Draining Kiss
+- Psychic
 
-Walrein @ Sitrus Berry
+Mamoswine @ Sitrus Berry
+Ability: Snow Cloak
+Level: 52
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 0 Spe
+EVs: 114 HP / 252 Atk / 144 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant
+- Earthquake
+- Ice Shard
+- Avalanche
+- Body Press
+
+Walrein @ Icy Rock
+Ability: Ice Body
 Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 114 HP / 252 Atk / 144 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Bold
+- Hail
+- Blizzard
 - Surf
+- Brine
+
+Glalie @ Glalitite
+Level: 55
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+Nature: Jolly
 - Body Slam
-- Ice Beam
-- Sheer Cold
+- Ice Shard
+- Crunch
+- Iron Head
 
 === TRAINER_DRAKE ===
 Name: DRAKE
@@ -4745,48 +4832,73 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 Mugshot: Blue
 
-Shelgon
+Noivern (M)
+Ability: Infiltrator
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+Nature: Timid
+- Boomburst
+- Dragon Pulse
+- Air Slash
+- Roost
 
-Altaria
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
-
-Kingdra
+Haxorus (M)
+Ability: Rivalry
 Level: 53
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+Nature: Jolly
+- Guillotine
+- Dragon Claw
+- Iron Head
+- Brick Break
 
 Flygon
 Level: 53
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+Nature: Timid
+- Scorching Sands
+- Dragon Pulse
+- Bug Buzz
+- Air Slash
 
-Salamence @ Sitrus Berry
+Tyrantrum @ Lum Berry
+Ability: Rock Head
+Level: 53
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+Nature: Jolly
+- Head Smash
+- Outrage
+- Crunch
+- Iron Head
+
+Salamence (M) @ Wide Lens
+Ability: Intimidate
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+Nature: Timid
+- Hurricane
+- Fire Blast
+- Hydro Pump
+- Dragon Pulse
+
+Garchomp (M) @ Garchompite
+Ability: Rough Skin
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+Nature: Jolly
+- Dragon Dance
+- Poison Jab
 - Dragon Claw
-- Rock Slide
-- Crunch
+- Earthquake
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -4796,7 +4908,7 @@ Gender: Female
 Music: Female
 Items: Potion / Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
 Geodude
 Level: 12
@@ -4806,12 +4918,20 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Throw
 - Rock Tomb
 
-Geodude
-Level: 12
+Lileep @ Grip Claw
+Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
+- Wrap
+- Confuse Ray
+- Ingrain
+- Rock Tomb
+
+Kabuto @ Big Root
+Level: 14
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Scratch
+- Harden
+- Absorb
 - Rock Tomb
 
 Nosepass @ Oran Berry
@@ -4830,31 +4950,43 @@ Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
-Machop
-Level: 16
+Mankey
+Level: 17
+Ability: Anger Point
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Karate Chop
-- Low Kick
+- Fury Swipes
 - Seismic Toss
 - Bulk Up
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
-
 Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Level: 18
+Ability: Guts
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Arm Thrust
 - Vital Throw
 - Reversal
 - Bulk Up
+
+Croagunk @ Muscle Band
+Level: 19
+Ability: Poison Touch
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fake Out
+- Drain Punch
+- Venoshock
+- Bulk Up
+
+Heracross @ Coba Berry
+Level: 20
+Ability: Moxie
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Fury Cutter
+- Bulk Up
+- Horn Attack
+- Arm Thrust 
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -9369,19 +9501,32 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Camerupt
-Level: 36
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Mightyena
-Level: 38
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Golbat
+Camerupt @ Heat Rock
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Sunny Day
+- Earth Power
+- Lava Plume
+- Yawn
+
+Mightyena
+Ability: Intimidate
+Level: 41
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Howl
+- Play Rough
+- Crunch
+- Psychic Fangs
+
+Magmortar
+Level: 42
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flamethrower
+- Scorching Sands
+- Thunderbolt
+- Solar Beam
 
 === TRAINER_EDWIN_2 ===
 Name: EDWIN
@@ -9513,6 +9658,8 @@ AI: Basic Trainer
 Treecko
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pound
+- Leer
 
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
 Name: BRENDAN
@@ -9568,6 +9715,8 @@ AI: Check Bad Move / Try To Faint / Force Setup First Turn
 Torchic
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Growl
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
 Name: BRENDAN
@@ -9623,6 +9772,8 @@ AI: Basic Trainer
 Mudkip
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Growl
 
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
 Name: BRENDAN
@@ -9678,6 +9829,8 @@ AI: Basic Trainer
 Treecko
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pound
+- Leer
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -9733,6 +9886,8 @@ AI: Basic Trainer
 Torchic
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Growl
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -9788,6 +9943,8 @@ AI: Basic Trainer
 Mudkip
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Growl
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY
@@ -10855,9 +11012,13 @@ Lotad
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Taillow
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 Torchic
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRENDAN
@@ -10872,9 +11033,13 @@ Wingull
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Poochyena
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 Treecko
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -10940,11 +11105,11 @@ Poochyena
 Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Numel
+Zubat
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Zubat
+Magmar
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10979,9 +11144,13 @@ Slugma
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Starly
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 Mudkip
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: MAY
@@ -10996,9 +11165,13 @@ Wingull
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Poochyena
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 Treecko
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -11011,6 +11184,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Mightyena
+Ability: Moxie
 Level: 37
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -11020,6 +11194,10 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Camerupt
 Level: 39
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Houndoom @ Houndoominite
+Level: 42
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
@@ -11036,12 +11214,17 @@ Mightyena
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Zubat
+Golbat
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Camerupt
 Level: 25
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Houndoom
+Ability: Intimidate
+Level: 27
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_TIANA ===
@@ -11274,7 +11457,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
+Typhlosion @ Typhlosionite
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13492,10 +13675,6 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 26
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
 Mightyena
 Level: 28
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
@@ -13505,7 +13684,11 @@ Level: 30
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 Camerupt
-Level: 33
+Level: 32
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+
+Magmar
+Level: 34
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_DARCY ===
@@ -13533,19 +13716,32 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
 Mightyena
+Ability: Moxie
 Level: 42
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Sucker Punch
+- Crunch
+- Psychic Fangs
+- Play Rough
 
 Crobat
 Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Cross Poison
+- Acrobatics
+- Leech Life
+- Roost
 
-Camerupt
+Houndoom @ Houndoominite
 Level: 44
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Flamethrower
+- Dark Pulse
+- Foul Play
+- Solar Beam
 
 === TRAINER_PETE ===
 Name: PETE
@@ -14132,9 +14328,13 @@ Lotad
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Taillow
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 Torchic
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -14149,9 +14349,13 @@ Torkoal
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Starly
+Level: 14
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 Mudkip
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE
@@ -15861,55 +16065,65 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
-Skarmory
+Skarmory @ Leftovers
+Ability: Sturdy
 Level: 77
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
+EVs: 114 HP / 0 Atk / 252 Def / 0 SpA / 144 SpD / 0 Spe
+- Stealth Rock
 - Aerial Ace
-- Spikes
-- Steel Wing
+- Roost
+- Toxic
 
-Claydol
+Aggron @ Assault Vest
+Ability: Rock Head
 Level: 75
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Reflect
-- Light Screen
-- Ancient Power
-- Earthquake
-
-Aggron
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Earthquake
-- Solar Beam
+EVs: 114 HP / 144 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe
+- Body Press
 - Dragon Claw
+- Iron Head
+- Head Smash
 
-Cradily
+Tyranitar @ Smooth Rock
+Ability: Sand Stream
 Level: 76
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Ancient Power
-- Ingrain
-- Confuse Ray
+EVs: 0 HP / 252 Atk / 114 Def / 0 SpA / 144 SpD / 0 Spe
+- Stone Edge
+- Crunch
+- Earthquake
+- Iron Head
 
-Armaldo
+Bastiodon @ Leftovers
+Ability: Soundproof
 Level: 76
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
+EVs: 114 HP / 0 Atk / 252 Def / 0 SpA / 144 SpD / 0 Spe
+- Body Press
 - Ancient Power
-- Aerial Ace
-- Slash
+- Heavy Slam
+- Protect
 
-Metagross @ Sitrus Berry
+Archeops @ Sitrus Berry
+Level: 76
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Head Smash
+- Acrobatics
+- Earthquake
+- U-turn
+
+Metagross @ Metagrossite
 Level: 78
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 114 Def / 0 SpA / 144 SpD / 0 Spe
 - Earthquake
-- Psychic
+- Zen Headbutt
 - Meteor Mash
-- Shadow Ball
+- Bullet Punch
 
 === TRAINER_ANABEL ===
 Name: ANABEL
@@ -16873,3 +17087,296 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_RICKEM ===
+Name: HAROLD
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Sandile
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Dig
+- Bite
+- Hone Claws
+- Bulldoze
+
+=== TRAINER_COASTALCAVE1 ===
+Name: HAROLD
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Roggenrola
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Harden
+- Mud Slap
+- Tackle
+- Headbutt
+
+Dwebble
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bug Bite
+- Withdraw
+- Rock Tomb
+- Sand Attack
+
+=== TRAINER_COASTALCAVE2 ===
+Name: SEAN
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Defense Curl
+- Rollout
+- Tackle
+- Mud Slap
+
+Aron
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Harden
+- Metal Claw
+- Rock Tomb
+- Roar
+
+=== TRAINER_COASTALCAVE3 ===
+Name: LIAM
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Machop
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Revenge
+- Low Sweep
+- Focus Energy
+- Leer
+
+Makuhita
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Arm Thrust
+- Fake Out
+- Focus Energy
+- Sand Attack
+
+=== TRAINER_COASTALCAVE4 ===
+Name: NOAH
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Roggenrola
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Revenge
+- Low Sweep
+- Focus Energy
+- Leer
+
+Aron
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Headbutt
+- Harden
+- Rock Tomb
+- Metal Claw
+
+=== TRAINER_COASTALCAVE5 ===
+Name: DANIEL
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Tinkatink
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Astonish
+- Fairy Wind
+- Metal Claw
+- Baby Doll Eyes
+
+Cubone
+Level: 15
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Headbutt
+- Retaliate
+- Mud Slap
+- Growl
+
+=== TRAINER_DESERTEXT2 ===
+Name: SYDNEY
+Class: Camper
+Pic: Camper
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+
+Hippopotas
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Crunch
+- Dig
+- Sand Tomb
+- Yawn
+
+Sandshrew
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fury Swipes
+- Bulldoze
+- Rollout
+- Poison Sting
+
+=== TRAINER_DESERTEXT3 ===
+Name: LLOYD
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Silicobra
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Wrap
+- Bulldoze
+- Minimize
+- Brutal Swing
+
+Gligar
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quick Attack
+- Fury Cutter
+- Poison Tail
+- Wing Attack
+
+=== TRAINER_DESERTEXT4 ===
+Name: JAYCE
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Sandshrew
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fury Swipes
+- Bulldoze
+- Rollout
+- Poison Sting
+
+Diglett
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bulldoze
+- Astonish
+- Mud Slap
+- Ancient Power
+
+=== TRAINER_DESERTEXT5 ===
+Name: ROWAN
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Onix
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Smack Down
+- Dragon Breath
+- Harden
+- Rock Polish
+
+Trapinch
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bulldoze
+- Bite
+- Sand Tomb
+- Ancient Power
+
+=== TRAINER_DESERTEXT6 ===
+Name: NICK
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Onix
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Smack Down
+- Dragon Breath
+- Harden
+- Rock Polish
+
+Drilbur
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Metal Claw
+- Fury Swipes
+- Slash
+- Bulldoze
+
+=== TRAINER_DESERTEXT7 ===
+Name: JIM
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Cubone
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Headbutt
+- Retaliate
+- Mud Slap
+- Rock Tomb
+
+Diglett
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bulldoze
+- Astonish
+- Mud Slap
+- Ancient Power
+

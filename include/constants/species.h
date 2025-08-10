@@ -1637,8 +1637,45 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GMAX         SPECIES_URSHIFU_RAPID_STRIKE_GMAX
 #define SPECIES_MIMIKYU_BUSTED_TOTEM                    1523
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    SPECIES_MIMIKYU_BUSTED_TOTEM
+#define SPECIES_TORTERRA_MEGA                           1524
+#define SPECIES_TYPHLOSION_MEGA                         1525
+#define SPECIES_FERALIGATR_MEGA                         1526
+#define SPECIES_INFERNAPE_MEGA                          1527
+#define SPECIES_LUXRAY_MEGA                             1528
+#define SPECIES_FLYGON_MEGA                             1529
+#define SPECIES_MILOTIC_MEGA                            1530
+#define SPECIES_BUTTERFREE_MEGA                         1531
+#define SPECIES_CROBAT_MEGA                             1532
+#define SPECIES_DRAGONITE_MEGA                          1533
+#define SPECIES_EMPOLEON_MEGA                           1534
+#define SPECIES_LAPRAS_MEGA                             1535
+#define SPECIES_MACHAMP_MEGA                            1536
+#define SPECIES_MEGANIUM_MEGA                           1537
+#define SPECIES_NIDOKING_MEGA                           1538
+#define SPECIES_NIDOQUEEN_MEGA                          1539
+#define SPECIES_SHEDINJA_MEGA                           1540
+#define SPECIES_ELECTIVIRE_MEGA                         1541
+#define SPECIES_FROSLASS_MEGA                           1542
+#define SPECIES_HAXORUS_MEGA                            1543
+#define SPECIES_MAGMORTAR_MEGA                          1544
+#define SPECIES_RAPIDASH_MEGA                           1545
+#define SPECIES_STARMIE_MEGA                            1546
+#define SPECIES_MIGHTYENA_MEGA                          1547
+#define SPECIES_GRENINJA_MEGA                           1548
+#define SPECIES_ARBOK_MEGA                              1549
+#define SPECIES_ARCANINE_MEGA                           1550
+#define SPECIES_KINGDRA_MEGA                            1551
+#define SPECIES_TYPHLOSION_MEGA_H                       1552
+#define SPECIES_GENGAR_MEGA_Y                           1553
+#define SPECIES_QUAGSIRE_MEGA                           1554
+#define SPECIES_MAGNEZONE_MEGA                          1555
+#define SPECIES_WEAVILE_MEGA                            1556
+#define SPECIES_ROSERADE_MEGA                           1557
+#define SPECIES_KYUREM_B_MEGA                             1558
+#define SPECIES_KYUREM_W_MEGA                             1559
 
-#define SPECIES_EGG                                     (SPECIES_MIMIKYU_BUSTED_TOTEM + 1)
+
+#define SPECIES_EGG                                     (SPECIES_KYUREM_W_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

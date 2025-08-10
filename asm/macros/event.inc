@@ -1895,6 +1895,12 @@
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
 
+	@ Sets the text of the name box in the next-shown message box.
+	.macro speakername text:req
+	.byte SCR_OP_SETSPEAKER
+	.4byte \text
+	.endm
+
 @ Supplementary
 
 	.macro goto_if_unset flag:req, dest:req
@@ -2104,6 +2110,19 @@
 	setvar VAR_0x8006, \item
 	special CreateEnemyEventMon
 	.endm
+
+	@ Start qol_field_moves
+
+    @ Checks if any Pokémon in the party can learn a specific HM.
+	@ If so, VAR_RESULT is set to the
+	@ (zero-indexed) slot number of the first Pokemon that knows the move. If not, VAR_RESULT is set to PARTY_SIZE.
+	@ VAR_0x8004 is also set to this Pokemon's species.
+	.macro checkpartylearnknowsfieldmove move:req
+	.byte SCR_OP_CHECKPARTYLEARNKNOWSFIELDMOVE
+	.2byte \move
+	.endm
+
+    @ End qol_field_moves
 
 	.macro setdynamicaifunc func:req
 	callnative ScriptSetDynamicAiFunc
@@ -2330,6 +2349,18 @@
 	@ When OW_USE_FAKE_RTC and OW_FLAG_PAUSE_TIME is assigned, this macro will resume the flow of time if paused, and stop the flow of time otherwise.
 	.macro togglefakertc
 	callnative Script_ToggleFakeRtc
+	.endm
+
+@ Show a map preview for the current map with the WEATHER type.
+	.macro mappreview
+	fadescreen FADE_TO_BLACK
+	callnative Script_MapPreview
+	waitstate
+	.endm
+
+	@ Show the current map's name popup.
+	.macro mappopup
+	callnative Script_MapPopUp
 	.endm
 
 	@ ============================ @
